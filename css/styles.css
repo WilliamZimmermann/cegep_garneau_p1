@@ -1,0 +1,79 @@
+/*CSS POUR LE FOOTER*/
+.footer-basic {
+  padding:10px 0;
+  color:#4b4c4d;
+}
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+.footer-basic li {
+  padding:0 8px;
+}
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+  font-size: 90%;
+}
+.footer-basic ul a:hover {
+  opacity:1;
+}
+.footer-basic .social {
+  text-align:center;
+  padding-top: 80px;
+  padding-bottom:15px;
+}
+.footer-basic .social > a {
+  font-size:24px;
+  display:inline-block;
+  text-align:center;
+  margin:0 12px;
+  color:inherit;
+  opacity:0.75;
+}
+.footer-basic .social > a:hover {
+  opacity:1;
+}
+.footer-basic .copyright {
+  margin-top:5px;
+  text-align:center;
+  font-size: 80%;
+  color:#404040;
+  margin-bottom:10px;
+}
+
+
+/*CSS File d'ariane*/
+.breadcrumb{
+  background-color: #f1f1f1;
+  justify-content: center;
+}
+.breadcrumb li img{
+  margin-right: 5px;
+  margin-top: -4px;
+}
+
+
+/* CSS POUR LE FORMULAIRE CONTACT*/
+.form input{
+  height: 6%;
+  border-radius: 5px;
+}
+.reseauSocial p{
+  margin-left: -30px;
+  font-size:x-large
+}
+.reseauSocial li{
+  margin-left: 120px;
+}
+
+
+/*CSS POUR LE GOOGLE MAP*/
+.iframe-radius{
+  border-radius: 15% ;
+}

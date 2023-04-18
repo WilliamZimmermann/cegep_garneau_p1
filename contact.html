@@ -25,13 +25,13 @@
                 <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="index.html">Accueil</a>
+                            <a class="nav-link text-grey" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-grey" href="projets.html">Mes projets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-grey" href="apropos.html">À propos</a>
+                            <a class="nav-link text-white" href="#">À propos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-grey" href="contact.html">Contact</a>
@@ -48,30 +48,46 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li><img src="assets/home.svg" width="15px" height="15px"></li>
-                    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
                 </ol>
             </nav>
-            <img src="assets/Nathan.png" width="235px" height="235px" class="rounded-circle border border-2">
+            <p class="display-1 fw-semibold mt-4 mb-4">Me contacter</p>
         </div>
         <div class="container">
-            <div class="row justify-content-center mt-4">
-                <div class="col-11">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Nathan Thibault</h5>
-                            <p class="text-muted">Étudiant en développement web</p>
-                            <p class="card-text">Bonjour, je m'appelle Nathan Thibault et je suis étudiant en développement web au cégep Garneau. J'ai débuté l'AEC en développement Web au début du mois d'octobre 2023 et je termine en mars 2024 !</p><br>
-                            <p class="fw-bold">Projet récent : </p>
-                            <ul>
-                                <li style="list-style-type: disc;">Jeu de mémoire - Javascript</li>
-                                <li style="list-style-type: disc;">Maquette graphique - Figma</li>
-                                <li style="list-style-type: disc;">Portfolio - NodeJs/Template EJS</li>
-                            </ul>
-                        </div>
+            <form method="post" class="form">
+              <div class="form-group">
+                <input name="name" type="text" class="form-control" id="name" placeholder="Prénom" required>
+              </div>
+              <div class="form-group">
+                <input name="name" type="text" class="form-control" id="name" placeholder="Nom de famille" required>
+              </div>
+              <div class="form-group">
+                <input name="email" type="email" class="form-control" id="email" placeholder="Courriel" required>
+              </div>
+              <div class="form-group">
+                <textarea name="message" type="textarea" class="form-control" id="message" placeholder="Message" required rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn text-white bg-dark">Envoyer</button>
+            </form>
+        </div>    
+        <div class="container mt-5">
+            <div class="row rounded">
+                <div class="col-md-12">
+                    <div style="width: 100%;">
+                        <iframe class="shadow embed-responsive-item iframe-radius" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=g%C3%A9gep%20Garneau%20formation%20continue+(My%20Business%20Name)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html"></a></iframe>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
+        <div class="d-flex justify-content-center mt-5">
+            <ul class="reseauSocial list-inline-item">
+                <p class="fst-normal mb-3">Me joindre sur les réseaux sociaux</p>
+                <li style="list-style-type: square;" class="mb-2"><a href="https://github.com/NateThibault" class="text-reset">GitHub</a></li>
+                <li style="list-style-type: square;" class="mb-2"><a href="https://www.facebook.com" class="text-reset">Facebook</a></li>
+                <li style="list-style-type: square;"><a href="https://www.linkedin.com/in/nathan-thibault-480023105/" class="text-reset">LinkedIn</a></li>
+            </ul>
+        <div>  
     </main>
     
     <footer class="footer-basic">
