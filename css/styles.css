@@ -59,6 +59,22 @@
 }
 
 
+/*CSS PHOTO ACCUEIL + PHOTO BIO*/
+.photoNathan{
+  border-radius: 50%;
+  width:400px;
+  height:400px
+}
+
+@media only screen and (max-width: 767px) {
+  .photoNathan {
+    border: 1px solid grey;
+    border-radius: 50%;
+    width:235px;
+    height:235px
+  }
+}
+
 /* CSS POUR LE FORMULAIRE CONTACT*/
 .form input{
   height: 6%;
@@ -75,5 +91,18 @@
 
 /*CSS POUR LE GOOGLE MAP*/
 .iframe-radius{
-  border-radius: 15% ;
+  border-radius:25px
+}
+
+@media only screen and (max-width: 767px) {
+  .iframe-radius {
+    border-radius: 15%
+  }
+}
+
+/*CSS POUR LE NAVBAR*/
+@media only screen and (max-width: 767px) {
+  .marginTopMobile {
+    margin-top: 25px;
+  }
 }
