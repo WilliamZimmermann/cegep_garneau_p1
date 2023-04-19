@@ -57,7 +57,15 @@
   margin-right: 5px;
   margin-top: -4px;
 }
-
+.text-decoration-accueil{
+  color: grey;
+  text-decoration: none;
+}
+.text-decoration-accueil:hover{
+  text-decoration: none !important;
+  color: grey;
+  cursor:default
+}
 
 /*CSS PHOTO ACCUEIL + PHOTO BIO*/
 .photoNathan{
@@ -112,4 +120,10 @@
   .marginTopMobile {
     margin-top: 25px;
   }
+  .marginTopMobile a:hover{
+    transform: scale(0);
+  }
+}
+.marginTopMobile a:hover{
+  transform: scale(1.1);
 }
