@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link" href="apropos.html">À propos</a>
+            <a class="nav-link" href="mesprojets.html">Mes Projets</a>
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="text-success text-center mt-5 mb-5 fs-3">Contact</h1>
+
+
+    <div class="m-auto text-center d-flex justify-content-between" style="max-width: 600px;">
+      <a class="mx-3" href="#"><img src="assets/facebook.png" alt="Facebook" style="width: 50px;"></a>
+      <a class="mx-3" href="#"><img src="assets/twitter.png" alt="Twitter" style="width: 50px;"></a>
+      <a class="mx-3" href="#"><img src="assets/linkedin.png" alt="Linkedin" style="width: 50px;"></a>
+    </div>
+
+    <p class="text-center m-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quos?</p>
+
+    <div class="m-auto" style="max-width: 90%; width: 600px;">
+      <form action="index.html">
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1"
+            placeholder="Entrez votre courriel: name@example.com">
+        </div>
+        <div class="mb-4">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+            placeholder="Entrez votre message"></textarea>
+        </div>
+        <div class="mb-5">
+          <button class="btn btn-success w-100" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+
+    <iframe class="mt-5 mb-5" style="position:relative; left: 50%; transform: translateX(-50%); max-width: 90%;"
+      width="600px" height="300" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyClMtBGjMHidncOXORUpfugXNminL6Kp-s&q=Québec+City,+QC"
+      allowfullscreen>
+    </iframe>
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb mx-2">
+        <li class="breadcrumb-item"><a class="text-success" href="index.html">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+      </ol>
+    </nav>
+  </main>
+
+  <footer class="text-bg-success">
+    <p class="m-0 p-2 text-center text-dark">2023</p>
+  </footer>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
