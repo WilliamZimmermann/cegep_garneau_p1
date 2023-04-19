@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+a{
+    text-decoration: none!important;
+}
+.navbar{
+    background-color: #f8f9fa!important;
+}
+.bloc-title{
+    margin-top: 8rem!important;
+}
+#titre-accueil{
+    font-family:Titillium , sans-serif!important;
+    text-align: center;
+    font-weight: 800;
+    color: #141c3a !important;
+    margin-top: 3rem;
+}
+#titre-pages{
+    font-family:Titillium , sans-serif!important;
+    font-weight: 800;
+    color: #141c3a !important;
+    margin-top: 8rem;
+}
+#titre_blanc{
+    font-family:Titillium , sans-serif!important;
+    text-align: center;
+    font-weight: 600;
+    color: #fff !important;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.centered{
+    text-align: center!important;
+}
+.mycolor{
+    background-color: #7633f8 !important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#nav_style {
+    color: #141c3a !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+#nav_style:hover {
+    color: #7510f7 !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+#nav_btn{
+    color: #7510f7 !important;
+    border-color: #7510f7 !important;
+    background-color: #fff;
+    font-weight: 500;
+}
+#nav_btn:hover{
+    color: #fff !important;
+    border-color: #fff!important;
+    background-color: #7510f7!important;
+    font-weight: 500;
+}
+#section_1{
+    margin: 0 auto!important;
+    padding: 1rem;
+}
+.float_right{
+    float: right;
+}
+#btn_appel{
+    color: #fff !important;
+    border-color: #5be9b9 !important;
+    background-color: #141c3a;
+    font-weight: 700;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px!important;
+}
+#btn_appel:hover{
+    color: #141c3a !important;
+    border-color: #5be9b9 !important;
+    background-color: #5be9b9;
+}
+.section_appel{
+    background-color:#141c3a;
+    border-radius: 15px;
+    color:#fff;
+    padding: 1rem;
+}
+.icon_footer {
+    padding: 1rem;
+    color: #fff;
+}
+.icon_footer:hover{
+    color:#141c3a!important;
+}
+.bcolor{
+    border-color:rgb(0 0 0 / 0%)!important;
+}
+.carie_mobile{
+    display: none;
+}
+.color_text{
+    color: #ffff !important;
+}
+#img_position{
+    margin-bottom: -3.25rem!important;
+}
+#btn_contact{
+    color: #141c3a !important;
+    border-color: #5be9b9 !important;
+    background-color: #5be9b9;
+}
+#btn_contact:hover{
+    color: #fff !important;
+    border-color: #5be9b9 !important;
+    background-color: #141c3a;
+}
+
+@media (max-width: 767.98px) { 
+    .card_icons{
+        float: left;
+        width: 50%;
+    }
+    #titre_blanc {
+        margin-bottom: 0!important;
+        margin-top: 1rem!important;
+    }
+    #btn_appelcontact{
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+    }
+    #text_appelcontact{
+        margin-top: 1.5rem!important;
+    }
+    .img_perfil{
+        width: 60%!important;
+    }
+    .bloc_text{
+        margin: 2rem 0 2rem 0!important;
+        padding: 0 2rem 0 2rem!important;
+
+    }
+    .centered_mobile{
+        text-align: center!important;
+    }
+    .carie_mobile{
+        display: block;
+    }
+    .carie_desktop{
+        display: none;
+    }
+ }
