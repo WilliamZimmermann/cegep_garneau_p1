@@ -1,0 +1,16 @@
+
+.navbar{
+    background-color: #E7F1FF !important;
+    margin-bottom: 3%;
+}
+
+#center-div{
+    text-align: center;
+}
+footer{
+    margin-top: 3%;
+    background-color: black;
+    color: white;
+    height: 6rem;
+    padding: 2rem;
+}
