@@ -40,7 +40,7 @@ a{
     padding-bottom: 3rem;
 }
 #nav_style {
-    color: #141c3a !important;
+    color: #141c3a;
     font-size: 18px;
     font-weight: 500;
 }
@@ -50,7 +50,7 @@ a{
     font-weight: 500;
 }
 #nav_btn{
-    color: #7510f7 !important;
+    color: #7510f7 ;
     border-color: #7510f7 !important;
     background-color: #fff;
     font-weight: 500;
@@ -58,6 +58,11 @@ a{
 #nav_btn:hover{
     color: #fff !important;
     border-color: #fff!important;
+    background-color: #7510f7!important;
+    font-weight: 500;
+}
+.btn.active{
+    color: #fff !important;
     background-color: #7510f7!important;
     font-weight: 500;
 }
@@ -116,6 +121,15 @@ a{
     color: #fff !important;
     border-color: #5be9b9 !important;
     background-color: #141c3a;
+}
+.navbar-nav .nav-link.active{
+    color: #7510f7 !important;
+}
+#map {
+    height: 350px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
 }
 
 @media (max-width: 767.98px) { 
