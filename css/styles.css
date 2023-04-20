@@ -57,14 +57,44 @@
   margin-right: 5px;
   margin-top: -4px;
 }
+
 .text-decoration-accueil{
   color: grey;
   text-decoration: none;
+  font-size: x-large;
 }
 .text-decoration-accueil:hover{
   text-decoration: none !important;
   color: grey;
   cursor:default
+}
+@media only screen and (max-width: 915px) {
+  .text-decoration-accueil{
+    font-size: 105% ;
+  }
+}
+.homeIconIndex{
+  width: 25px;
+  height: 25px;
+  margin-bottom: -10px;
+  margin-left: -20px;
+}
+@media only screen and (max-width: 915px) {
+  .homeIconIndex{
+    width:15px !important;
+    height:15px !important;
+    margin-bottom: 1px;
+  }
+}
+.homeIcon{
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (max-width: 915px) {
+  .homeIcon{
+    width:15px !important;
+    height:15px !important;
+  }
 }
 
 /*CSS PHOTO ACCUEIL + PHOTO BIO*/
@@ -73,8 +103,7 @@
   width:400px;
   height:400px
 }
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 915px) {
   .photoNathan {
     border: 1px solid grey;
     border-radius: 50%;
@@ -82,6 +111,7 @@
     height:235px
   }
 }
+
 
 /* CSS POUR LE FORMULAIRE CONTACT*/
 .form input{
@@ -108,22 +138,34 @@
 .iframe-radius{
   border-radius:25px
 }
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 915px) {
   .iframe-radius {
     border-radius: 15%
   }
 }
 
+
 /*CSS POUR LE NAVBAR*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 915px) {
   .marginTopMobile {
-    margin-top: 25px;
+    margin-top: 25px !important;
   }
   .marginTopMobile a:hover{
-    transform: scale(0);
+    transform: none !important;
+    text-decoration: none !important;
   }
+}
+.marginTopMobile li a{
+  font-size: large;
+  padding-right: 140px;
 }
 .marginTopMobile a:hover{
   transform: scale(1.1);
+  text-decoration: underline;
+}
+
+
+/*CSS FONT-FAMILY*/
+.inkFreeFamily{
+  font-family: "Ink Free", cursive;
 }
