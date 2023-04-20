@@ -9,6 +9,20 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Contact</title>
+  <script>
+    function initMap() {
+      const garneau = { lat: 46.7935879, lng: -71.2627805 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: garneau,
+      });
+      const marker = new google.maps.Marker({
+        position: garneau,
+        map: map,
+      });
+    }
+    window.initMap = initMap;
+  </script>
 </head>
 
 <body>
@@ -60,11 +74,12 @@
       </form>
     </div>
 
-    <iframe class="mt-5 mb-5" style="position:relative; left: 50%; transform: translateX(-50%); max-width: 90%;"
-      width="600px" height="300" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyClMtBGjMHidncOXORUpfugXNminL6Kp-s&q=Québec+City,+QC"
-      allowfullscreen>
-    </iframe>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClMtBGjMHidncOXORUpfugXNminL6Kp-s&callback=initMap&v=weekly"
+      defer>
+      </script>
+
+    <div id="map" class="m-auto mt-5 mb-5" style="max-width: 90%; width: 600px; height: 300px;"></div>
 
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ol class="breadcrumb mx-2">
