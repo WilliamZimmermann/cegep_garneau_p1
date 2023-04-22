@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-    <title>Home - Ma page avec Bootstrap</title>
+    <title>Contact (message sent) - Ma page avec Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">ABOUT</a>
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">CONTACT</a>
+                        <a class="nav-link active" aria-current="page" href="contact.html">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -41,39 +41,46 @@
     <main class="d-grid gap-2">
         <div class="container-fluid">
             <p></p>
-            <h1 class="title text-center">home</h1>
-            <div class="row">
-                <div class="col-4">
-                    <img src="/assets/oat.jpg" class="img-fluid" alt="...">
+            <h1 class="title text-center">contact</h1>
+            <p></p>
+            <form action="contactsent.html">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
                 </div>
-                <div class="col-8">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    
-                    </p>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
                 </div>
-            </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-dark" type="submit">Send</button>
+                </div>
+            </form>
+            <p></p>
             <div class="d-grid gap-2">
-                <a class="btn btn-dark" href="about.html" role="button">about</a>
-                <p></p>
+                <img src="/assets/tropical.jpg" class="img-fluid" alt="...">
             </div>
+            <p></p>
+            <h2 class="title text-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope-open-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 7.384v5.733l3.479-2.087c.15.275.335.553.558.83l-4.002 2.402A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738l-4.002-2.401c.223-.278.408-.556.558-.831L15 13.117V7.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM7.06.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+              </svg></h2>
+            <h2 class="title text-center">Thanks!</h2>
+            <h5 class="title text-center">I'll get back to you in just a few!</h5>
+            <p></p>
+            <h4 class="title text-center ">Visit me irl!</h4>
+            <div id="map-container-google-2" class="text-center">
+                <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                  style="border:0" allowfullscreen></iframe>
+            </div>
+            <p></p>
             <div class="d-grid gap-2">
-                <img src="/assets/lavender.jpg" class="img-fluid" alt="...">
-                <a class="btn btn-dark" href="projet1.html" role="button">projet 01</a>
-                <p></p>
+                <img src="/assets/tropical.jpg" class="img-fluid" alt="...">
             </div>
-            <div class="d-grid gap-2">
-                <img src="/assets/daisies.jpg" class="img-fluid" alt="...">
-                <a class="btn btn-dark" href="projet1.html" role="button">projet 02</a>
-                <p></p>
-            </div>
-            <div class="d-grid gap-2">
-                <img src="/assets/lily.jpg" class="img-fluid" alt="...">
-                <a class="btn btn-dark" href="projet1.html" role="button">projet 03</a>
-                <p></p>
-            </div>
+            <p></p>
         </div>
     </main>
-
+        
     <footer class="container-fluid">
         <div class="row text-bg-dark" data-bs-theme="dark">
             <div class="col-6">
@@ -98,7 +105,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 <script src="js/bootstrap.min.js"></script>
 
