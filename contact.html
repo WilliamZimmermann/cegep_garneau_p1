@@ -3,25 +3,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-  <title>Home - Ma page avec Bootstrap</title>
+  <title>Contact</title>
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    #map {
+      height: 350px;
+      /* The height is 400 pixels */
+      width: 100%;
+      /* The width is the width of the web page */
+    }
+  </style>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      const uluru = { lat: 46.7935879, lng: -71.2627805 };
+      // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: uluru,
+      });
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+
+    window.initMap = initMap;
+
+  </script>
 </head>
 
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
-
-  <nav class="sticky-top navbar navbar-expand-lg bg-light border">
+  <nav class="sticky-top navbar navbar-expand-lg bg-light border-bottom border-4">
     <div class="card-body align-items-end  text-light container-fluid justify-content-center">
       <ul class="navbar-nav align-items-center">
         <li class="nav-item active">
-          <a class="navbar-brand" href="/home.html">Raphaël Doucet</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/home.html">Accueil</a>
+          <a class="navbar-brand" href="/home.htm">Raphaël Doucet</a>
         </li>
         <li class="nav-item active">
+          <a class="nav-link" href="/home.html">Accueil</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/about.html">À propos</a>
         </li>
         <li class="nav-item">
@@ -35,12 +60,68 @@
   </nav>
 
   <main class="body-bg">
-    <div class="container contenuCenter">
-      
+    <div class="container contenuCenter p-5 body-bg">
+      <div class="card mb-5 bg-dark text-light">
+        <div class="card-body p-4 mt-4">
+          <h2 class="text-center mb-4 font-weight-bold text-decoration-underline">Contactez-moi!</h2>
+
+          <form action="/home.html" class="text-center">
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom :</label>
+              <input type="text" class="form-control text-center" id="nom" name="nom" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Adresse courriel :</label>
+              <input type="email" class="form-control text-center" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Numéro de téléphone :</label>
+              <input type="tel" class="form-control text-center" id="telephone" name="telephone" required>
+            </div>
+            <div class="mb-3 form-group">
+              <label for="subject" class="mb-3">Sujet:</label>
+              <select id="subject" name="subject" class="form-control text-center" required>
+                <option value="" disabled selected>Choisissez une option</option>
+                <option value="support">Support technique</option>
+                <option value="inquiry">Demande de renseignements</option>
+                <option value="collaboration">Proposition de collaboration</option>
+                <option value="billing">Problème de facturation</option>
+                <option value="quote">Demande de devis</option>
+                <option value="improvement">Suggestion d'amélioration</option>
+                <option value="other">Autre</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message :</label>
+              <textarea id="message" class="form-control text-center" name="message" required></textarea>
+            </div>
+            <div class="text-center pt-3">
+              <button class="btn btn-light border-4 border-light" type="submit">Soumettre</button>
+            </div>
+          </form>
+
+          <div class="go-to-maps">
+            <h4>Où me trouver!</h4>
+            <img src="/assets/icons8-up-arrow-100.png">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card bg-dark text-light border-5">
+        <div id="map"></div>
+        <div class="p-3">
+          <strong>Cégep Garneau</strong>
+          <address>Bd de l'Entente, Québec City,<br />Quebec G1S 4S3</address>
+        </div>
+
+      </div>
     </div>
   </main>
 
-  <footer class="sticky-bottom border-top">
+
+
+  <footer class="border-4 border-top">
     <div class=" pt-5 text-center bg-light">
       <div class="card-body align-items-end">
         <div class="container">
@@ -73,6 +154,11 @@
     </div>
   </footer>
 
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy5smrw6FTTKBIwkcnTH66nuqh_McesHg&callback=initMap&v=weekly"
+    defer></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
+
 
 </html>
