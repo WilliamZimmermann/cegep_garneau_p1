@@ -1,0 +1,11 @@
+.my-nav-bar {
+    border-bottom: 3px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 32px;
+    margin-right: 75px;
+    padding: 50px 0;
+}
