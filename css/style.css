@@ -48,3 +48,34 @@ footer {
 .cartes-hauteur{
   height: 200px;
 }
+
+.cv{
+  display: flex;
+  flex-direction: row;
+}
+
+.contenu-about{
+  display: flex;
+  justify-content: space-between;
+}
+.progress-cv{
+  width: 65%;
+  border-radius: 25px;
+}
+
+.progress-cv::-webkit-progress-value {
+  background-color: #ffffff;
+}
+
+.cv-contact{
+  display: flex;
+  flex-direction: row;
+}
+
+.cv-icons{
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-interest{
+}
