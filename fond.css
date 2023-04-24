@@ -6,3 +6,13 @@ body{
     background-color: black;
 }
 
+.ligne{
+    border: solid 2px white
+}
+
+
+.lettre{
+    height:20rem;
+    width:fit-content;
+   
+}
