@@ -3,10 +3,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-    <title>Home - Ma page avec Bootstrap</title>
+    <title> Ma page </title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <script>
+                    // Initialize and add the map
+                    function initMap() {
+                        // The location of Uluru
+                        const uluru = { lat: 55.7935879, lng: -90.2627805 };
+                        // The map, centered at Uluru
+                        const map = new google.maps.Map(document.getElementById("map"), {
+                            zoom: 15,
+                            center: uluru,
+                        });
+                        // The marker, positioned at Uluru
+                        const marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map,
+                        });
+                    }
+            
+                    window.initMap = initMap;
+            
+    </script>
 </head>
 
 <body class="body">
@@ -56,14 +75,15 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-               <!--  <div class="card"> -->
-                <div class="mb-3">
+              <form method="get" action="">
+                 <div class="mb-3">
+                 
                     <label for="exampleFormControlInput1" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="votre nom complet" required>
-                </div>
+                    <input type="text" class="form-control" id="exampleFormControlInput2"required placeholder="votre nom complet" >
+                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email </label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"required placeholder="name@example.com" >
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Telephone</label>
@@ -73,32 +93,12 @@
                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required ></textarea>
                 </div> 
+              
                 <div class="mb-3">
                    <a  href="index.html"><button type="submit" class="btn btn-primary">Envoyer</button></a> 
                 </div>
+              </form>
                 <div id="map"></div>
-                
-                <script>
-                    // Initialize and add the map
-                    function initMap() {
-                        // The location of Uluru
-                        const uluru = { lat: 45.7935879, lng: -81.2627805 };
-                        // The map, centered at Uluru
-                        const map = new google.maps.Map(document.getElementById("map"), {
-                            zoom: 15,
-                            center: uluru,
-                        });
-                        // The marker, positioned at Uluru
-                        const marker = new google.maps.Marker({
-                            position: uluru,
-                            map: map,
-                        });
-                    }
-            
-                    window.initMap = initMap;
-            
-                </script>
-            
                 <!-- To obtain your Google API you can go to this website here https://developers.google.com/maps -> Get Started -> Credentials -->
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPpz30h3r-JNtgC_JdDF8LzWSivTErA08&callback=initMap&v=weekly"
                     defer></script>
