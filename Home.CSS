@@ -1,3 +1,8 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+
 .nav-link {
     color: #fff;
     font-size: 1.2rem;
@@ -10,8 +15,22 @@ body{
 }
 
 /* Path: HOME.CSS */
-.nav-link:hover {
+ .nav-link:hover {
     color: #d6580f;
     padding: 0.5rem 1rem;
     border-radius: 4px;
+} 
+
+
+
+footer li .page-link:hover{
+    background-color: #d6580f !important;
+    
 }
+
+footer  .icon-link-hover:hover {
+    color: #d6580f !important;
+}
+
+
+
