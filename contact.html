@@ -5,6 +5,7 @@
 <head>
     <title>Contact - Ma page avec Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -57,19 +58,8 @@
                     <button class="btn btn-dark" type="submit">Send</button>
                 </div>
             </form>
-            <div class="d-grid gap-2">
-                <img src="/assets/tropical.jpg" class="img-fluid" alt="...">
-            </div>
             <h4 class="title text-center ">Visit me irl!</h4>
-            <div id="map-container-google-2" class="text-center">
-                <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                  style="border:0" allowfullscreen></iframe>
-            </div>
-            <p></p>
-            <div class="d-grid gap-2">
-                <img src="/assets/tropical.jpg" class="img-fluid" alt="...">
-            </div>
-            <p></p>
+            <div id="map"></div>
         </div>
     </main>
         
@@ -100,5 +90,9 @@
 
 </body>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1GU7CYu1roKhwZCvFY9g69-msgxRkywc&callback=initMap&v=weekly"
+    defer></script>
+
 
 </html>
