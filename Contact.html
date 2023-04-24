@@ -15,23 +15,23 @@
         width: 100%;
         /* The width is the width of the web page */
     }
-</style>
-<script>
-  // Initialize and add the map
-  function initMap() {
-      // The location of Uluru
-      const uluru = { lat: 46.7935879, lng: -71.2627805 };
-      // The map, centered at Uluru
-      const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 15,
-          center: uluru,
-      });
-      // The marker, positioned at Uluru
-      const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-      });
-  }
+  </style>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 46.7935879, lng: -71.2627805 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+    }
 
   window.initMap = initMap;
 
@@ -47,7 +47,7 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-       <a href="Home.html" ><svg  class="img-fluid w-50 h-50"  viewBox="0 0 152 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <a href="index.html" ><svg  class="img-fluid w-50 h-50"  viewBox="0 0 152 82" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M82.5391 34.7337C96.8462 40.4599 117.413 80.1027 133.061 72.1742C148.709 64.2456 154.074 1.25748 139.32 7.42415C124.566 13.5908 110.259 67.7694 100.87 76.1384C91.4809 84.5075 68.2321 29.0075 82.5391 34.7337Z" stroke="url(#paint0_linear_61_22792)" stroke-width="8"/>
         <circle cx="63" cy="74" r="8" fill="url(#paint1_linear_61_22792)"/>
         <path d="M6.43774 8.71903C15.314 23.1342 -2.12145 78.1128 6.43774 73.7547C14.9969 69.3967 49.2337 55.3838 47.9657 35.5379C46.6977 15.6919 -2.4385 -5.6961 6.43774 8.71903Z" stroke="url(#paint2_linear_61_22792)" stroke-width="8"/>
@@ -84,7 +84,7 @@
       
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link mx-5 fs-3" href="Home.html">Accueil</a>
+            <a class="nav-link mx-5 fs-3" href="index.html">Accueil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-5 fs-3" href="A_propos.html">À propos</a>
@@ -116,7 +116,7 @@
       <div class="row gx-5">
         <div class="col">
          <div class="p-3">
-          <form class="form-group">
+          <form id="my-form" action="/submit-form" method="POST">
             <label for="name" class="text-white fs-5 my-2">Full Name <span class="text-danger">*</span></label>
             <input type="text" class="form-control" id="name" placeholder="Nom">
             <label for="email" class="text-white fs-5 my-2">Email <span class="text-danger">*</span></label>
@@ -191,7 +191,7 @@
 
     <nav aria-label="navigation-page">
       <ul class="pagination justify-content-center mt-3">
-        <li class="page-item"><a class="page-link text-white bg-black" href="Home.html">1</a></li>
+        <li class="page-item"><a class="page-link text-white bg-black" href="index.html">1</a></li>
         <li class="page-item"><a class="page-link text-white bg-black" href="A_propos.html">2</a></li>
         <li class="page-item"><a class="page-link text-white bg-black" href="Mes_projet.html">3</a></li>
         <li class="page-item"><a class="page-link text-white bg-black" href="Contact.html">4</a></li>
