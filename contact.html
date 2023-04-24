@@ -1,13 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
+    <link href="https://fonts.cdnfonts.com/css/jsmath-cmbx10" rel="stylesheet">
+    <title>Home - Ma page avec Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h1>This is a new page</h1>
-    <p>Welcome to my new page!</p>
+    <nav class="navbar font navbar-expand-lg navbar-light bg-light w-100">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-center align-items-center w-100">
+                <li class="nav-item">
+                    <a class="nav-link fs-4" href="index.html">Antoine<br>Bergeron</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4" aria-current="page" href="apropos.html">À Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4" href="mesprojets.html">Mes projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4 active fw-bolder" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    
+
+    <div class="bar-noir"></div>
+
+
+    <div class="container mt-3">
+        <h1>Bienvenue sur ma page Bootstrap</h1>
+        <p>Cette page est créée avec Bootstrap.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/dog.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/woman.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/man.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="js/bootstrap.min.js"></script>
+
 </html>
