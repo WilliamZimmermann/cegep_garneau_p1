@@ -1,10 +1,40 @@
-<html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Home - CEC</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Contact - CEC</title>
+    <style>
+        #map {
+            height: 350px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: 46.7935879, lng: -71.2627805 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+
+        window.initMap = initMap;
+
+    </script>
 </head>
 
 <body>
@@ -40,26 +70,36 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h1>Welcome</h1>
-        <p>
-            Looking for a website or an art piece? you came to the right place!
-        </p>
-        <img src="assets/moi.jpeg" alt="picture of me">
-        <p>
-            My name is Charles-Étienne, and my mission is about bringing forward clean, sharp and beautiful works of web design and 3D modeling.
-        </p>
-        <a class="btn btn-dark" href="about.html" role="button">About me</a>
-        <a class="btn btn-outline-secondary" href="contact.html" role="button">Contact me</a>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Recent projects include :</li>
-            <li class="list-group-item">Cheshire Cat</li>
-            <li class="list-group-item">"Romano Fafard"</li>
-            <li class="list-group-item">Gladiator</li>
-        </ul>
-        <a class="btn btn-dark" href="projects.html" role="button">Art projects</a>
-        <a class="btn btn-outline-secondary" href="#" role="button">Web design</a>
-    </main>
+    <div class="container py-4">
+        <form id="contactForm">
+            <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" id="name" type="text" placeholder="Name" />
+            </div> <!-- Email address input -->
+            <div class="mb-3">
+                <label class="form-label" for="emailAddress">Email Address</label>
+                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" type="text" placeholder="Message"
+                    style="height: 10rem;"></textarea>
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <p>In Quebec city? Come meet me at my office!</p>
+    <iframe
+    width="100%"
+    height="350"
+    frameborder="0" style="border:0"
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCYaIy-PFdUgFMJoPUkGELFMMtvF3mnjMU&q=SOS+Aventures+:+jeux+d'évasion,+2095+Rue+Frank-Carrel,+Québec+City,+Quebec+G1N+4L8"
+    allowfullscreen>
+  </iframe>
+    <script src="js/bootstrap.min.js"></script>
     <footer>
         <div class="p-3 mb-2 bg-dark text-white">
             <ul class="nav justify-content-center">
