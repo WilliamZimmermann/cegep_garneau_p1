@@ -39,6 +39,12 @@ a{
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+.blc_color{
+    max-width: 650px;
+}
+.blc_color2{
+    max-width: 850px;
+}
 #nav_style {
     color: #141c3a;
     font-size: 18px;
@@ -131,6 +137,7 @@ a{
     width: 100%;
     /* The width is the width of the web page */
 }
+
 
 @media (max-width: 767.98px) { 
     .card_icons{
