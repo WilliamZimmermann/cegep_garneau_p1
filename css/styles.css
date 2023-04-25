@@ -42,7 +42,6 @@ h2{
     height: 40px;
 }
 .footer{
-   
     background-color: #000;
     color: #fff;
     padding: 10px;
@@ -51,13 +50,13 @@ h2{
 .form-label{
     text-align: left;
 }
-#exampleFormControlInput2{
+input[type=text]{
     text-align: left;
 }
-#exampleFormControlInput1{
+input[type=phone]{
     text-align: left;
 }
-#exampleFormControlTextarea1{
+input[type=email]{
     text-align: left;
 }
 #map {
