@@ -1,0 +1,97 @@
+body {
+    background-image: url('../assets/backgroundimage.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.flex-fill {
+    flex: 1;
+}
+
+
+
+.btn-resize {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+footer a {
+    font-size: 8px;
+}
+
+.card {
+    box-shadow: 0px 4px 8px rgba(36, 34, 34, 0.8);
+}
+
+.title {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.my-form {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gros-titre{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.barre{
+    width: 250px;
+    height: 15px;
+    border-radius: 28px;
+    background-color: grey;
+}
+
+.w100{
+    width: 250px;
+    height: 15px;
+    background-color: green;
+    border-radius: 28px; 
+}
+
+.w80{
+    width: 80%;
+    height: 15px;
+    background-color: green;
+    border-radius: 28px;
+}
+
+.w90{
+    width: 90%;
+    height: 15px;
+    background-color: green;
+    border-radius: 28px;
+}
+
+.infostableau{
+    padding-top:10px;
+}
+
+.card-margins{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rounded-frame{ 
+    width: 100%; /* Set width of the image to 100% to fill the circular frame */
+    height: 100%; /* Set height of the image to 100% to fill the circular frame */
+}
