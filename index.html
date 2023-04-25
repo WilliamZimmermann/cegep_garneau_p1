@@ -31,10 +31,14 @@
       </div>
     </nav>
   </header>
-
   <main>
+    <nav class="mt-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb mx-2">
+        <li class="breadcrumb-item"><a class="text-success" href="index.html">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">À propos</li>
+      </ol>
+    </nav>
     <h1 class="text-success text-center mt-5 mb-5 fs-3">Accueil</h1>
-
     <div class="card m-5" style="max-width: 100%;">
       <div class="row g-0">
         <div class="col-md-4">
@@ -51,36 +55,28 @@
         </div>
       </div>
     </div>
-
     <div id="carouselExample" class="carousel slide m-5">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://picsum.photos/1024/600" class="d-block w-100" alt="https://picsum.photos/1024/600">
+          <img src="https://picsum.photos/1024/600" class="d-block w-75 m-auto" alt="https://picsum.photos/1024/600">
         </div>
         <div class="carousel-item">
-          <img src="https://picsum.photos/1024/600" class="d-block w-100" alt="https://picsum.photos/1024/600">
+          <img src="https://picsum.photos/1024/600" class="d-block w-75 m-auto" alt="https://picsum.photos/1024/600">
         </div>
         <div class="carousel-item">
-          <img src="https://picsum.photos/1024/600" class="d-block w-100" alt="https://picsum.photos/1024/600">
+          <img src="https://picsum.photos/1024/600" class="d-block w-75 m-auto" alt="https://picsum.photos/1024/600">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon text-bg-success rounded" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon text-bg-success rounded" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-      <ol class="breadcrumb mx-2">
-        <li class="breadcrumb-item"><a class="text-success" href="index.html">Accueil</a></li>
-      </ol>
-    </nav>
   </main>
-
   <footer class="text-bg-success">
     <p class="m-0 p-2 text-center text-dark">2023</p>
   </footer>

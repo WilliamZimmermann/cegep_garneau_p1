@@ -45,19 +45,20 @@
       </div>
     </nav>
   </header>
-
   <main>
+    <nav class="mt-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb mx-2">
+        <li class="breadcrumb-item"><a class="text-success" href="index.html">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">À propos</li>
+      </ol>
+    </nav>
     <h1 class="text-success text-center mt-5 mb-5 fs-3">Contact</h1>
-
-
     <div class="m-auto text-center d-flex justify-content-between" style="max-width: 600px;">
       <a class="mx-3" href="#"><img src="assets/facebook.png" alt="Facebook" style="width: 50px;"></a>
       <a class="mx-3" href="#"><img src="assets/twitter.png" alt="Twitter" style="width: 50px;"></a>
       <a class="mx-3" href="#"><img src="assets/linkedin.png" alt="Linkedin" style="width: 50px;"></a>
     </div>
-
     <p class="text-center m-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quos?</p>
-
     <div class="m-auto" style="max-width: 90%; width: 600px;">
       <form action="index.html">
         <div class="mb-3">
@@ -73,22 +74,12 @@
         </div>
       </form>
     </div>
-
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClMtBGjMHidncOXORUpfugXNminL6Kp-s&callback=initMap&v=weekly"
       defer>
       </script>
-
     <div id="map" class="m-auto mt-5 mb-5" style="max-width: 90%; width: 600px; height: 300px;"></div>
-
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-      <ol class="breadcrumb mx-2">
-        <li class="breadcrumb-item"><a class="text-success" href="index.html">Accueil</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Contact</li>
-      </ol>
-    </nav>
   </main>
-
   <footer class="text-bg-success">
     <p class="m-0 p-2 text-center text-dark">2023</p>
   </footer>
