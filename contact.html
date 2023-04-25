@@ -14,7 +14,7 @@
 <body class="p-3 m-0 border-0 bd-example" data-bs-theme="dark">
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mon site perso</a>
+            <a class="navbar-brand" href="index.html">Mon site perso</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                 aria-label="Toggle navigation">
@@ -30,16 +30,16 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">À propos</a>
+                            <a class="nav-link" href="about.html">À propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mes projets</a>
+                            <a class="nav-link" href="project.html">Mes projets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
                             <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" La flèche dropdown et la section dropdown
@@ -73,15 +73,46 @@
         </nav>
     </div>
 
+    <img class="mb-5 ms-5" src="assets/Main Text.png" alt="">
+
     <div class="container" data-bs-theme="dark">
 
         <div class="row">
             <hr class="ligne">
         </div>
+<p class="text-center">N'hésitez pas à m'écrire</p>
 
-        <div class="row">
-             <img  class="lettre" src="" alt="">
-        </div>
+        <div class="card ms-3" style="width: 18rem;">
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Votre mail</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Steve Jobs" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Écrivez moi</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                      </div>
+                      <br>
+                      <div class="col-12 mb-4">
+                        <button type="submit" class="btn btn-dark">Envoyer</button>
+                    </div>
+                     
+                      <p class="text-center">Au plaisir de vous rencontrer</p>
+                    </form>
+                    
+            </div>
+          </div>
+         
+
+                
+        
 
        
 
@@ -91,10 +122,29 @@
 
 
         <footer>
-            <p>Mon footer</p>
-            <p>Mon footer</p>
-            <p>Mon footer</p>
-           
+            <p class="text-center">Suivez moi sur mes réseaux</p>
+            <div class="container text-center">
+                <div class="row">
+                    
+                    <div class="col">
+                        <a href="https://www.facebook.com/daniel.lelievre.39/"><img src="assets/Facebook.png" alt=""></a>
+                    </div>
+        
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/daniel-lelievre-larue-522a48117"><img src="assets/linkedin.png"
+                                alt=""></a>
+                    </div>
+        
+                    <div class="col">
+                        <a href="https://www.instagram.com/daniellelievrelarue/?igshid=YmMyMTA2M2Y%3D"><img
+                                src="assets/instagram.png" alt=""></a>
+                    </div>
+        
+        
+                </div>
+            </div>
+        
+            <p class="text-center">Création du site 2023</p>     
         </footer>
         
         <script src="js/bootstrap.min.js"></script>
