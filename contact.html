@@ -1,0 +1,123 @@
+<html data-bs-theme="dark">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/map.css">
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Quebec
+            const quebec = { lat: 46.794203632636595, lng: -71.26077187255483 };
+            // The map, centered at Quebec
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: quebec,
+            });
+            // The marker, positioned at Quebec
+            const marker = new google.maps.Marker({
+                position: quebec,
+                map: map,
+            });
+        }
+
+        window.initMap = initMap;
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">S.A.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Mes projets</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-3">
+        <div class="container my-3 text-center">
+            <h1>Contact</h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="courriel">Courriel</label>
+                            <input type="email" class="form-control" id="courriel" placeholder="xyz@xyz.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="sujet">Sujet</label>
+                            <input type="text" class="form-control" id="sujet" placeholder="Sujet">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div id="map"></div>
+                    </div>
+                    <div class="row">
+                        <strong>Cégep Garneau</strong>
+                        <address>Bd de l'Entente, Québec City,<br />Quebec G1S 4S3</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid w-100 px-4 text-center border position-sticky-bottom">
+        <div class="col">
+            <div class="row">
+                <h5 class="mt-3">Liens</h5>
+                <ul class="list-group list-group-horizontal d-flex justify-content-center">
+                    <li class="list-group-item border-0"><a href="index.html">Home</a></li>
+                    <li class="list-group-item border-0"><a href="about.html">À propos</a></li>
+                    <li class="list-group-item border-0"><a href="projects.html">Mes projets</a></li>
+                    <li class="list-group-item border-0"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <h5>Mes réseaux sociaux</h5>
+                <ul class="list-group list-group-horizontal d-flex justify-content-center">
+                    <li class="list-group-item border-0"><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li class="list-group-item border-0"><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li class="list-group-item border-0"><a href="https://twitter.com/">Twitter</a></li>
+                    <li class="list-group-item border-0"><a href="https://www.linkedin.com/">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1sSqlCUTuSdkCNZmDvlcPcGUk1eMke94&callback=initMap&v=weekly" defer></script>
+</body>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
