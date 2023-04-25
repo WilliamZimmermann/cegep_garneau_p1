@@ -3,14 +3,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-    <title>Home - Ma page avec Bootstrap</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Ma page</a>
+            <a class="navbar-brand" href="index.html">A. Poirier Design Web</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -19,7 +19,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Mes projets</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">À propos</a>
@@ -33,46 +36,76 @@
     </nav>
 
     <div class="container mt-3">
-        <h1>Bienvenue sur ma page Bootstrap</h1>
+        <h1 class="text-center">Bienvenue sur le site de A.Poirier Design Web</h1>
         <p>Cette page est créée avec Bootstrap.</p>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-12">
                 <div class="card">
-                    <img src="./assets/dog.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <img src="./assets/me.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Andréann Poirier</h5>
+                        <p class="card-text">Étudiante en développement Web</p>
+                        <p class="card-text">J’ai fait mes débuts au cégep Garneau de Québec en octobre 2022. Je suis une passionnée de l’informatique et je crois que l’avenir est dans la technique.</p>
+                        <a href="#" class="btn btn-primary btn-resize">Contactez-moi !</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="./assets/woman.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-12">
+                <div class="card text-center" style="width: 100%;">
+                    <div class="card-header">
+                      Projets récents
                     </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="./assets/man.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Création du site de Ouijo</li>
+                      <li class="list-group-item">Création du site des studios Shiva</li>
+                      <li class="list-group-item">Programmation du jeu de mémoire Z</li>
+                    </ul>
+                  </div>
         </div>
     </div>
+    <footer class="footer bg-light mt-4">
+        <div class="container">
+            <div class="row">
+            <div class="col-2">
+              <h4>LOGO</h4>
+            </div>
+            <div class="col-2">
+              <h4>Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <h4>1</h4>
+              <ul class="list-unstyled">
+                <li>Email: info@example.com</li>
+                <li>Phone: 123-456-7890</li>
+                <li>Address: 1234 Street, City, State, ZIP</li>
+              </ul>
+            </div>
+            <div class="col-2">
+                <h4>2</h4>
+          </div>
+          <div class="col-2">
+            <h4>3</h4>
+          </div>
+          <div class="col-2">
+            <h4>4</h4>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>&copy; 2023 Your Company. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
 <script src="js/bootstrap.min.js"></script>
 
