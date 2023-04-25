@@ -12,74 +12,111 @@
 <body>
     <nav class="navbar font navbar-expand-lg navbar-light bg-light w-100">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav justify-content-center align-items-center w-100">
-                <li class="nav-item">
-                    <a class="nav-link fs-4" href="index.html">Antoine<br>Bergeron</a>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link fs-4" aria-current="page" href="apropos.html">À Propos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-4" href="mesprojets.html">Mes projets</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-4 active fw-bolder" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-center align-items-center w-100">
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="index.html">Antoine<br>Bergeron</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" aria-current="page" href="apropos.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="mesprojets.html">Mes projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 active fw-bolder" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    
-    
+    </nav>
+
+
+
 
     <div class="bar-noir"></div>
 
 
     <div class="container mt-3">
-        <h1>Bienvenue sur ma page Bootstrap</h1>
-        <p>Cette page est créée avec Bootstrap.</p>
-    </div>
-    <div class="container">
         <div class="row">
-            <div class="col-4">
-                <div class="card">
-                    <img src="./assets/dog.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            <div class="d-flex align-items-center">
+                <img src="/assets/moi.jpg" class="p-pic" alt="photo de profil">
+                <div>
+                    <h2 class="fw-bolder padding-h2">27ans, future développeur et chef de profession</h2>
+                    <div class="bar-noir"></div>
+
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="./assets/woman.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+                    <h2 class="fw-bolder padding-h2">Ville de Québec</h2>
+                    <div class="bar-noir"></div>
+
+                    <img class="map" src="/assets/map.png" alt="Carte du Québec">
+                    <p>Québec, QC - Canada</p>
+
+                    <h2 class="fw-bolder padding-h2">Autres liens</h2>
+                    <div class="bar-noir"></div>
+
+                    <ul class="margin-contact">
+                        <li class="padding-projets bold"><img class="logo-projets-garneau-contact"
+                            src="/assets/gitlab.svg" alt="gitlab logo">AntoineBergeron720</li>
+                        <li class="padding-propos bold"><img class="logo-projets-garneau-contact"
+                            src="/assets/github.png" alt="github logo">AntoineBergeron720</li>
+                        <li class="padding-projets-last bold"><img class="logo-projets-garneau-contact-outlook"
+                            src="/assets/outlook.svg" alt="outlook logo">antoine.bergeron1@hotmail.com</li>
+                        <li class="padding-projets-last bold"><img class="logo-projets-garneau-contact-teams"
+                            src="/assets/teams.png" alt="teams logo">Antoine Bergeron (anber011)</li>
+        
+                    </ul>
+                    <div class="bar-noir">
+                        <a href="#" onclick="scrollToTop()"><img class="logo-arrow" src="/assets/arrow.png" alt="flèche vers le haut"></a>
+
+                        <script>
+                        function scrollToTop() {
+                          window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll to the top of the page with smooth animation
+                        }
+                        </script>
+                        
                     </div>
+        
+        
+                    <footer>
+        
+        
+                        <p class="text-align-right">Haut de<br>page</p>
+        
+                        <div class="container footer-align w-100">
+                            <ul>
+                                <li>Antoine Bergeron</li>
+                                <li>Cell: 418-271-9618</li>
+                                <li>Québec, Qc</li>
+                            </ul>
+        
+                            <div class="col-md-8 d-flex align-items-center justify-content-center">
+                                <div class="center">
+                                    <p>Newsletter</p>
+                                    <div class="newsletter">S'inscrire</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-follow">
+                            <p class="fw-bolder">Suivez-moi</p>
+                            <img class="logo-facebook" src="/assets/facebook.svg" alt="facebook logo">
+                            <img class="logo-insta" src="/assets/instagram.jpg" alt="instagram logo">
+                            <img class="logo-twitter" src="/assets/twitter.jpg" alt="twitter logo">
+                        </div>
+                    </footer>
+        
+        
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="./assets/man.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
 </body>
 <script src="js/bootstrap.min.js"></script>
 

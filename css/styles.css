@@ -53,13 +53,49 @@ ul li {
   margin-right: 30%;
 }
 
+.logo-projets-imdb {
+  width: 150px;
+  height: 150px;
+  margin-right: 32%;
+  float: right;
+  margin-bottom: 30px;
+}
+
 .logo-projets-garneau {
   width: 125px;
   float: right;
   margin-right: 33%;
 }
 
+.logo-projets-garneau-contact {
+  width: 125px; 
+  height: auto; 
+  margin-right: 28px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
 
+.logo-projets-garneau-contact-teams {
+  width: 125px; 
+  height: auto; 
+  margin-right: 28px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.logo-projets-garneau-contact-outlook {
+  width: 100px; 
+  height: auto; 
+  margin-right: 45px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.margin-contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .padding-projets {
   margin: 24px 0 8px 0;
 }
@@ -68,10 +104,122 @@ ul li {
   margin-bottom: 16px;
 }
 
-.text-align-center {
+.text-align-right {
+  margin-top: 65px;
+  float: right;
   text-align: center;
 }
 
 .logo-arrow {
+  margin-top: 16px;
+  margin-right: 10px;
+  float: right;
   width: 50px;
+}
+
+.footer-align {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-follow {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.logo-facebook {
+  height: 125px;
+}
+
+.logo-insta {
+  height: 100px;
+  margin-right: -24px;
+  margin-left: -52px;
+}
+
+.logo-twitter {
+  height: 100px;
+}
+
+body {
+  font-size: larger;
+}
+
+.padding-propos {
+  margin-bottom: 8px;
+}
+
+.padding-propos-formation {
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.margin-propos {
+  margin: 16px 0 0 24px;
+}
+
+.bold {
+  font-weight: 650;
+}
+
+ul {
+  padding: 0;
+}
+
+.dotted {
+  text-decoration: dotted;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.down-arrow {
+  width: 50px;
+  margin-left: 49%;
+}
+
+.map {
+  width: 750px;
+  margin-top: 50px;
+}
+
+.link {
+  color: black;
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: black;
 }

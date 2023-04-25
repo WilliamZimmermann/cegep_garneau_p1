@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-    <link href="https://fonts.cdnfonts.com/css/jsmath-cmbx10" rel="stylesheet">           
+    <link href="https://fonts.cdnfonts.com/css/jsmath-cmbx10" rel="stylesheet">
     <title>Home - Ma page avec Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -12,74 +12,134 @@
 <body>
     <nav class="navbar font navbar-expand-lg navbar-light bg-light w-100">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav justify-content-center align-items-center w-100">
-                <li class="nav-item">
-                    <a class="nav-link fs-4" href="index.html">Antoine<br>Bergeron</a>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link fs-4" aria-current="page" href="apropos.html">À Propos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-4 active fw-bolder" href="mesprojets.html">Mes projets</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-4" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-center align-items-center w-100">
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="index.html">Antoine<br>Bergeron</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" aria-current="page" href="apropos.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4 active fw-bolder" href="mesprojets.html">Mes projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    
-    
+    </nav>
+
+
+
 
     <div class="bar-noir"></div>
 
 
     <div class="container mt-3">
-        <h1>Bienvenue sur ma page Bootstrap</h1>
-        <p>Cette page est créée avec Bootstrap.</p>
-    </div>
-    <div class="container">
         <div class="row">
-            <div class="col-4">
-                <div class="card">
-                    <img src="./assets/dog.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            <div class="d-flex align-items-center">
+                <img src="/assets/moi.jpg" class="p-pic" alt="photo de profil">
+                <div>
+                    <h2 class="fw-bolder padding-h2">27ans, future développeur et chef de profession</h2>
+                    <div class="bar-noir"></div>
+
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="./assets/woman.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+
+
+            <h2 class="fw-bolder padding-h2">Les projets que j'ai réalisé jusqu'à présent</h2>
+            <div class="bar-noir"></div>
+
+
+            <ul>
+                <li class="fw-bolder padding-projets">Création d'un produit (Webflix)<img class="logo-projets-imdb"
+                    src="/assets/imdb.jpg" alt="webflix logo"></li>
+                <li>Utilisier les images données pour créer une plateforme comme netflix</li>
+                <li>Intégrer les images et refaire le visuel du site</li>
+                <li>Faire une page détaillé d'une série.</li>
+                <li>Faire une page personnelle</li>
+                <li class="padding-projets-last underlined">Liens vers le projet</li>
+            </ul>
+
+            <div class="bar-noir"></div>
+            <ul>
+                <li class="fw-bolder padding-projets">Création d'un produit livrable (CooKBox)</li>
+                <li>Choisir un produit et une clientèle cible<img class="logo-projets" src="/assets/cookbox.jpg"
+                        alt="cookbox logo"></li>
+                </li>
+                <li>Faire la maquette filaire du site version iphone et desktop.
+                <li>Faire la maquette graphique du site.</li>
+                <li>Faire la présentation du projet</li>
+                <li class="padding-projets-last underlined">Liens vers le projet</li>
+            </ul>
+
+            <div class="bar-noir"></div>
+
+
+            <ul>
+                <li class="fw-bolder padding-projets">Création d'un produit (Webflix)</li>
+                <li>Utilisier les images données pour créer une plateforme comme netflix</li>
+                <li>Choisir 3 séries et afficher une images pour chacunes<img class="logo-projets"
+                        src="/assets/webflix 5.jpg" alt="webflix logo"></li>
+                <li>Faire une page détaillé d'une série.</li>
+                <li>Faire la maquette graphique du site.</li>
+                <li class="padding-projets-last underlined">Liens vers le projet</li>
+            </ul>
+
+            <div class="bar-noir"></div>
+            <ul class="padding-projets">
+                <li class="fw-bolder padding-projets">Création d'un site web<img class="logo-projets-garneau"
+                        src="/assets/garneau.png" alt="garneau logo"></li>
+                <li>Utilisier les images données pour créer un site web.</li>
+                <li>Utiliser les vérifications.</li>
+                <li>Reproduire le visuel d'un site</li>
+                <li>Avoir un formulaire</li>
+                <li class="padding-projets-last underlined">Liens vers le projet</li>
+            </ul>
+            <div class="bar-noir"><a href="apropos.html"><img class="logo-arrow" src="/assets/arrow.png" alt="flèche vers le haut"></a>
+            </div>
+
+
+            <footer>
+
+                <img class="down-arrow" src="/assets/down-arrow.jpg" alt="flèche vers le bas">
+                <p class="text-align-right">Haut de<br>page</p>
+
+                <div class="container footer-align w-100">
+                    <ul>
+                        <li>Antoine Bergeron</li>
+                        <li>Cell: 418-271-9618</li>
+                        <li>Québec, Qc</li>
+                    </ul>
+
+                    <div class="col-md-8 d-flex align-items-center justify-content-center">
+                        <div class="center">
+                            <p>Newsletter</p>
+                            <div class="newsletter">S'inscrire</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="./assets/man.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="footer-follow">
+                <p class="fw-bolder">Suivez-moi</p>
+                <img class="logo-facebook" src="/assets/facebook.svg" alt="facebook logo">
+                <img class="logo-insta" src="/assets/instagram.jpg" alt="instagram logo">
+                <img class="logo-twitter" src="/assets/twitter.jpg" alt="twitter logo">
                 </div>
-            </div>
+            </footer>
+
+
         </div>
-    </div>
+
+
+
 </body>
 <script src="js/bootstrap.min.js"></script>
 
