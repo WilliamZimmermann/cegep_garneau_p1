@@ -7,7 +7,7 @@
   <title>Contact</title>
   <!-- Inclure les fichiers CSS de Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="style.css">
 
   <script>
     // Initialize and add the map
@@ -31,9 +31,9 @@
   </script>
 </head>
 
-<body class="bg-black">
+<body>
   <!-- Header -->
-  <header>
+  <header class="d-flex justify-content-center">
     <nav class="navbar navbar-expand-lg justify-content-lg-center  mt-3 navbar-dark ">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler order-first ms-2" type="button" data-bs-toggle="collapse"
@@ -105,9 +105,9 @@
   </header>
 
   <!-- Main -->
-  <main>
+  <main class="container-fluid">
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col">
           <h1 class="text-white mt-5">Contact</h1>
@@ -116,11 +116,11 @@
       </div>
     </div>
 
-    <div class="container px-4 ">
+    <div class="container-fluid px-4 ">
       <div class="row gx-5">
-        <div class="col">
-          <div class="p-3">
-            <form id="my-form" action="/submit-form" method="POST">
+        <div class="col p-3">
+          
+            <form id="my-form"  method="POST">
               <label for="name" class="text-white fs-5 my-2" >Nom & Prenom <span class="text-danger">*</span></label>
               <input type="text" class="form-control" id="name" placeholder="Nom et Prenom" required>
               <label for="email" class="text-white fs-5 my-2">Email <span class="text-danger">*</span></label>
@@ -131,14 +131,14 @@
               <textarea class="form-control" id="message" rows="3" placeholder="Ecrire un Message" required></textarea>
               <button type="submit" class="btn btn-warning mt-3">Soumettre</button>
             </form>
-          </div>
+          
         </div>
-        <div class="col">
-          <div class="p-3">
+        <div class="col p-3">
+         
             <div id="map">
 
             </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -148,7 +148,7 @@
   <!-- footer -->
   <footer class="text-white my-5 ">
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-3 order-1">
           <h5>Follow Us</h5>
@@ -221,7 +221,7 @@
   </footer>
 
   <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt0Kjw96X93TyxMzs7PVhb6DopalWjsk8&callback=initMap&v=weekly"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1sSqlCUTuSdkCNZmDvlcPcGUk1eMke94&callback=initMap&v=weekly"
     defer></script>
   <script src="js/bootstrap.min.js"></script>
 </body>

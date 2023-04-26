@@ -8,84 +8,86 @@
   <!-- Inclure les fichiers CSS de Bootstrap -->
   <!-- Inclure les fichiers CSS de Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-black">
+<body>
   <!-- Header -->
-  <header>
+ <!-- Header -->
+ <header class="d-flex justify-content-center">
+  <nav class="navbar navbar-expand-lg justify-content-lg-center  mt-3 navbar-dark ">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler order-first ms-2" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <nav class="navbar navbar-expand-lg justify-content-lg-center mb-5 mt-3 navbar-dark ">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler order-first ms-2" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a href="index.html"><svg class="img-fluid w-50 h-50" viewBox="0 0 152 82" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M82.5391 34.7337C96.8462 40.4599 117.413 80.1027 133.061 72.1742C148.709 64.2456 154.074 1.25748 139.32 7.42415C124.566 13.5908 110.259 67.7694 100.87 76.1384C91.4809 84.5075 68.2321 29.0075 82.5391 34.7337Z"
-            stroke="url(#paint0_linear_61_22792)" stroke-width="8" />
-          <circle cx="63" cy="74" r="8" fill="url(#paint1_linear_61_22792)" />
-          <path
-            d="M6.43774 8.71903C15.314 23.1342 -2.12145 78.1128 6.43774 73.7547C14.9969 69.3967 49.2337 55.3838 47.9657 35.5379C46.6977 15.6919 -2.4385 -5.6961 6.43774 8.71903Z"
-            stroke="url(#paint2_linear_61_22792)" stroke-width="8" />
-          <defs>
-            <linearGradient id="paint0_linear_61_22792" x1="161" y1="-7.99999" x2="86" y2="92"
-              gradientUnits="userSpaceOnUse">
-              <stop />
-              <stop offset="0.155211" stop-color="#E06621" />
-              <stop offset="0.281863" stop-color="#5ABF1C" />
-              <stop offset="0.415487" stop-color="#179B9B" />
-              <stop offset="0.580483" stop-color="#102B6F" />
-              <stop offset="0.711783" stop-color="#4B0B4C" />
-              <stop offset="0.831463" stop-color="#A72424" />
-              <stop offset="1" stop-color="#D1AEAE" />
-            </linearGradient>
-            <linearGradient id="paint1_linear_61_22792" x1="80" y1="36.5" x2="52" y2="86.5"
-              gradientUnits="userSpaceOnUse">
-              <stop />
-              <stop offset="0.278711" stop-color="#A98339" stop-opacity="0.99" />
-              <stop offset="0.603035" stop-color="#27BB2D" stop-opacity="0.544852" />
-              <stop offset="0.722863" stop-color="#1E48B6" stop-opacity="0.88" />
-              <stop offset="0.850097" stop-color="#A81CA2" stop-opacity="0.91" />
-              <stop offset="1" stop-opacity="0" />
-            </linearGradient>
-            <linearGradient id="paint2_linear_61_22792" x1="26" y1="4" x2="-4.44886" y2="85.9037"
-              gradientUnits="userSpaceOnUse">
-              <stop stop-color="#BB4747" />
-              <stop offset="0.154167" stop-color="#61475C" />
-              <stop offset="0.315625" stop-color="#00057D" />
-              <stop offset="0.609254" stop-color="#385E46" stop-opacity="0.4602" />
-              <stop offset="0.733513" stop-color="#04813D" stop-opacity="0.7349" />
-              <stop offset="0.893906" stop-color="#C0BA1B" stop-opacity="0.7349" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </a>
 
-      <div class="collapse navbar-collapse justify-content-lg-start" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active mx-5 fs-4" href="index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-5 fs-4" href="about.html">À Propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-5 fs-4" href="my_projects.html">Mes Projets</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-5 fs-4" href="Contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+
+    <a href="index.html"><svg class="img-fluid w-50 h-50" viewBox="0 0 152 82" version="1.1" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M82.5391 34.7337C96.8462 40.4599 117.413 80.1027 133.061 72.1742C148.709 64.2456 154.074 1.25748 139.32 7.42415C124.566 13.5908 110.259 67.7694 100.87 76.1384C91.4809 84.5075 68.2321 29.0075 82.5391 34.7337Z"
+          stroke="url(#paint0_linear_61_22792)" stroke-width="8" />
+        <circle cx="63" cy="74" r="8"   fill="url(#paint1_linear_61_22792)" />
+        <path
+          d="M6.43774 8.71903C15.314 23.1342 -2.12145 78.1128 6.43774 73.7547C14.9969 69.3967 49.2337 55.3838 47.9657 35.5379C46.6977 15.6919 -2.4385 -5.6961 6.43774 8.71903Z"
+          stroke="url(#paint2_linear_61_22792)" stroke-width="8" />
+        <defs>
+          <linearGradient id="paint0_linear_61_22792" x1="161" y1="-7.99999" x2="86" y2="92"
+            gradientUnits="userSpaceOnUse">
+            <stop />
+            <stop offset="0.155211" stop-color="#E06621" />
+            <stop offset="0.281863" stop-color="#5ABF1C" />
+            <stop offset="0.415487" stop-color="#179B9B" />
+            <stop offset="0.580483" stop-color="#102B6F" />
+            <stop offset="0.711783" stop-color="#4B0B4C" />
+            <stop offset="0.831463" stop-color="#A72424" />
+            <stop offset="1" stop-color="#D1AEAE" />
+          </linearGradient>
+          <linearGradient id="paint1_linear_61_22792" x1="80" y1="36.5" x2="52" y2="86.5"
+            gradientUnits="userSpaceOnUse">
+            <stop />
+            <stop offset="0.278711" stop-color="#A98339" stop-opacity="0.99" />
+            <stop offset="0.603035" stop-color="#27BB2D" stop-opacity="0.544852" />
+            <stop offset="0.722863" stop-color="#1E48B6" stop-opacity="0.88" />
+            <stop offset="0.850097" stop-color="#A81CA2" stop-opacity="0.91" />
+            <stop offset="1" stop-opacity="0" />
+          </linearGradient>
+          <linearGradient id="paint2_linear_61_22792" x1="26" y1="4" x2="-4.44886" y2="85.9037"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BB4747" />
+            <stop offset="0.154167" stop-color="#61475C" />
+            <stop offset="0.315625" stop-color="#00057D" />
+            <stop offset="0.609254" stop-color="#385E46" stop-opacity="0.4602" />
+            <stop offset="0.733513" stop-color="#04813D" stop-opacity="0.7349" />
+            <stop offset="0.893906" stop-color="#C0BA1B" stop-opacity="0.7349" />
+          </linearGradient>
+        </defs>
+      </svg></a>
+    <div class="collapse navbar-collapse justify-content-lg-start" id="navbarNav">
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link mx-5 fs-4" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-5 fs-4" href="about.html">À Propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active mx-5 fs-4" href="my_projects.html">Mes Projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-5 fs-4" href="Contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
   <!-- main -->
-  <main>
+  <main class="container-fluid">
     <section id="home" class="text-white mb-5 mt-5">
-      <div class="container text-center">
+      <div class="container-fluid text-center">
         <h1 class="mt-5 mb-5 display-4">Bienvenue sur ma page d'accueil</h1>
         <p class="lead fs-2 lead">Développeur et expert en développement web avec une connaissance approfondie des
           technologies et des outils de développement,
@@ -100,7 +102,7 @@
   <!-- footer -->
   <footer class="text-white  my-5 rounded-2">
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-3 order-1">
           <h5>Follow Us</h5>
