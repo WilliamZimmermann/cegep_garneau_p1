@@ -1,0 +1,111 @@
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title> Touifik Dellys developpeur Web </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: 55.7935879, lng: -90.2627805 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+
+        window.initMap = initMap;
+
+    </script>
+</head>
+
+<body class="body">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="./assets/logo.jpg" class="logo" alt="Logo">
+            <a class="navbar-brand" href="index.html">Web Astuce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Apropos.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Mesprojets.html">Mes projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacts.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <h1> Contacts</h1>
+        <a class="profil1" href="https://linkedin.com">
+            <p id="profil">Profil Linkedin "toufik dellys"</p>
+        </a>
+        <div class="social">
+            <a href="https://linkedin.com" class="social"><img src="assets/circle-linkedin-64.webp"></a>
+            <a href="https://facebook.com" class="social"><img src="assets/facebook.png"></a>
+            <a href="https://instagram.com" class="social"><img src="assets/instagram.png"></a>
+            <a href="https://twitter.com" class="social"><img src="assets/twiter.png"></a>
+        </div>
+        <h2>Formulaire a remplir</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form method="get" action="">
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="name" required placeholder="votre nom complet">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email </label>
+                        <input type="email" class="form-control" id="email" required placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Telephone</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="votre numero de telephone">
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <a href="index.html"><button type="submit" class="btn btn-primary">Envoyer</button></a>
+                        </div>
+                 </form>
+                       <div id="map"></div>
+                </div>    
+            </div>
+       </div>
+    </div>
+
+  <footer class="footer">
+        <div class="footer-div">
+            <p class="footer-text">@ 2023 Web Astuce. Création Innovation.</p>
+        </div>
+   </footer>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPpz30h3r-JNtgC_JdDF8LzWSivTErA08&callback=initMap&v=weekly"
+        defer></script>
+</html>
