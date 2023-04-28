@@ -21,10 +21,10 @@ Créez votre propre page personnelle ;
 ### GIT
 
 - Votre projet devra être mis sur GitHub (<https://github.com/WilliamZimmermann/cegep_garneau_p1/your_initials>) .
-- En vous basant sur la branche principale (your_initials), vous devrez créer une branche de développement appelée "your_initials/website_dev". Tout le développement devra se produire uniquement dans cette branche.
+- En vous basant sur la branche principale (student_yourInitials), vous devrez créer une branche de développement appelée "dev_yourInitials". Tout le développement devra se produire uniquement dans cette branche.
 - Faites tous vos commits dedans.
-- Lorsque vous aurez terminé et testé le développement, faites une demande de fusion (Marge Request) vers la branche principale ("website_dev"). Vous ne devez pas encore fusionner avec la branche principale. À ce stade, vous devrez inviter le professeur (@WilliamZimmermann) et un autre élève (qui sera désigné par le professeur) pour effectuer le Code Review.
-  Ce n'est que lorsque le professeur vous autorisera à faire la fusion (avoir l'examen de code approuvé par le professeur) que vous pourrez faire la fusion de votre branche "your_initials/website_dev" avec la branche principale.
+- Lorsque vous aurez terminé et testé le développement, faites une demande de fusion (Marge Request) vers la branche principale ("student_yourInitials"). Vous ne devez pas encore fusionner avec la branche principale. À ce stade, vous devrez inviter le professeur (@WilliamZimmermann) et un autre élève (qui sera désigné par le professeur) pour effectuer le Code Review.
+  Ce n'est que lorsque le professeur vous autorisera à faire la fusion (avoir l'examen de code approuvé par le professeur) que vous pourrez faire la fusion de votre branche "dev_yourInitials" avec la branche principale (student_yourInitials).
 
 ## CODE REVIEW (2 points)
 
@@ -42,10 +42,10 @@ Créez votre propre page personnelle ;
 
 ## Dates Clés
 
-- 17/04/2023 - Début du projet;
-- 18/04/2023 - Finalisation et envoi à Code Review. Review par les collègues;
-- 20/04/2023 - Révision par le professeur;
-- 24/04/2023 - Présentation pour la classe avec le site web publié sur un host;
+* 17/04/2023 - Début du projet;
+* 24/04/2023 - Finalisation et envoi à Code Review. Review par les collègues;
+* 25/04/2023 - Révision par le professeur;
+* 01/05/2023 - Présentation pour la classe;
 
 ## Méthode d'évaluation
 
