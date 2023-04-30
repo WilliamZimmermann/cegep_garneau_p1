@@ -1,0 +1,175 @@
+body{
+  background-color: #f1f1f1
+}
+
+/*CSS POUR LE FOOTER*/
+.footer-basic {
+  padding:10px 0;
+  color:#4b4c4d;
+}
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+.footer-basic li {
+  padding:0 8px;
+}
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+  font-size: 90%;
+}
+.footer-basic ul a:hover {
+  opacity:1;
+}
+.footer-basic .social {
+  text-align:center;
+  padding-top: 80px;
+  padding-bottom:15px;
+}
+.footer-basic .social > a {
+  font-size:24px;
+  display:inline-block;
+  text-align:center;
+  margin:0 12px;
+  color:inherit;
+  opacity:0.75;
+}
+.footer-basic .social > a:hover {
+  opacity:1;
+}
+.footer-basic .copyright {
+  margin-top:5px;
+  text-align:center;
+  font-size: 80%;
+  color:#404040;
+  margin-bottom:10px;
+}
+
+
+/*CSS File d'ariane*/
+.breadcrumb{
+  background-color: #f1f1f1;
+  justify-content: center;
+}
+.breadcrumb li img{
+  margin-right: 5px;
+  margin-top: -4px;
+}
+
+.text-decoration-accueil{
+  color: grey;
+  text-decoration: none;
+  font-size: x-large;
+}
+.text-decoration-accueil:hover{
+  text-decoration: none !important;
+  color: grey;
+  cursor:default
+}
+@media only screen and (max-width: 915px) {
+  .text-decoration-accueil{
+    font-size: 105% ;
+  }
+}
+.homeIconIndex{
+  width: 25px;
+  height: 25px;
+  margin-bottom: -10px;
+  margin-left: -20px;
+}
+@media only screen and (max-width: 915px) {
+  .homeIconIndex{
+    width:15px !important;
+    height:15px !important;
+    margin-bottom: 1px;
+  }
+}
+.homeIcon{
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (max-width: 915px) {
+  .homeIcon{
+    width:15px !important;
+    height:15px !important;
+  }
+}
+
+/*CSS PHOTO ACCUEIL + PHOTO BIO*/
+.photoNathan{
+  border-radius: 50%;
+  width:400px;
+  height:400px
+}
+@media only screen and (max-width: 915px) {
+  .photoNathan {
+    border: 1px solid grey;
+    border-radius: 50%;
+    width:235px;
+    height:235px
+  }
+}
+
+
+/* CSS POUR LE FORMULAIRE CONTACT*/
+.form input{
+  height: 6%;
+  border-radius: 5px;
+}
+.socialNetwork p{
+  margin-left: -30px;
+  font-size:x-large
+}
+.socialNetwork li{
+  margin-left: 120px;
+}
+.boutonForm{
+  width: 150px;
+  height: 50px;
+}
+.boutonForm:hover{
+  transform: scale(1.1);
+}
+
+
+/*CSS POUR LE GOOGLE MAP*/
+.iframe-radius{
+  border-radius:25px
+}
+@media only screen and (max-width: 915px) {
+  .iframe-radius {
+    border-radius: 15%
+  }
+}
+
+
+/*CSS POUR LE NAVBAR*/
+@media only screen and (max-width: 915px) {
+  .marginTopMobile {
+    margin-top: 25px !important;
+  }
+  .marginTopMobile a:hover{
+    transform: none !important;
+    text-decoration: none !important;
+  }
+}
+.marginTopMobile li a{
+  font-size: large;
+  padding-right: 140px;
+}
+.marginTopMobile a:hover{
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+
+/*CSS FONT-FAMILY*/
+.inkFreeFamily{
+  font-family: "Ink Free", cursive;
+}
