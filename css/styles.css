@@ -1,3 +1,7 @@
+body{
+  background-color: #f1f1f1
+}
+
 /*CSS POUR LE FOOTER*/
 .footer-basic {
   padding:10px 0;
@@ -118,11 +122,11 @@
   height: 6%;
   border-radius: 5px;
 }
-.reseauSocial p{
+.socialNetwork p{
   margin-left: -30px;
   font-size:x-large
 }
-.reseauSocial li{
+.socialNetwork li{
   margin-left: 120px;
 }
 .boutonForm{
