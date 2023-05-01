@@ -4,12 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Accueil</title>
+  <title>Mes projets</title>
   <!-- Inclure les fichiers CSS de Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="script.js" defer></script>
 
 </head>
 
@@ -76,13 +74,13 @@
         
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active me-5 fs-4" href="index.html">Accueil</a>
+            <a class="nav-link me-5 fs-4" href="index.html">Accueil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fs-4 me-5" href="about.html">À Propos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4 me-5" href="my_projects.html">Mes Projets</a>
+            <a class="nav-link active fs-4 me-5" href="my_projects.html">Mes Projets</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fs-4 me-5" href="contact.html">Contact</a>
@@ -91,20 +89,128 @@
       </div>
     </nav>
   </header>
-  
-  
+
   <!-- main -->
+
   <main class="container-fluid">
-    <section  class="text-white mb-5 mt-5">
-      <div class="container-fluid text-center">
-        <h1 class="mt-5 mb-5 display-4">Bienvenue sur ma page d'accueil</h1>
-        <p class="lead fs-2 lead">Développeur et expert en développement web avec une connaissance approfondie des
-          technologies et des outils de développement,
-          ainsi que des compétences en résolution de problèmes et en collaboration.</p>
+
+    <h2 class="text-warning ms-3 mt-5">Projets Récents :</h2>
+    <div id="carouselExampleCaptions" class="carousel slide mt-5">
+      <div class="carousel-indicators mt-5">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active mb-3 ">
+          <div class="card border-warning mb-5 w-75" style="margin: 0% auto;">
+            <img src="images/Site_imdb.jpg" class="card-img-top" alt="IMDB">
+            <div class="card-group bg-dark p-3 border border-warning  text-white">
+              <h3 class="card-title "> • Site IMDB</h3>
+              <p class="card-text fs-3 p-3">
+                - Site IMDB créé avec HTML et CSS, avec cinq pages et une page de détails et valeur,
+                Le site web IMDB permet aux utilisateurs de regarder des films en ligne via leur ordinateur, leur
+                téléphone portable, leur tablette ou leur télévision connectée.
+                Les utilisateurs peuvent choisir parmi une sélection de titres dans différentes catégories telles que
+                les films d'action, les comédies, les drames, les documentaires, et bien plus encore.</p>
+              <p class="card-text"><small class="text-warning">© Copyright All Rights Reserved</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item  mb-3 ">
+          <div class="card border-warning mb-5 w-75" style="margin: 0% auto;">
+            <img src="images/figma_baseball.jpg" class="card-img-top" alt="Figma Baseball">
+            <div class="card-group bg-dark p-3 border border-warning text-white">
+              <h3 class="card-title"> • Maquette Graphique Site Baseball</h3>
+              <p class="card-text fs-3 p-3">
+                - Maquette graphique créer avec Figma pour un site de vente des equipements de baseball.
+                Cela comprend la disposition des catégories de produits, des images de produits, des descriptions, des options de personnalisation,
+                des informations de paiement et de livraison, et plus encore</p>
+              <p class="card-text"><small class="text-warning">© Copyright All Rights Reserved</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item  mb-3 ">
+          <div class="card border-warning mb-5 w-75" style="margin: 0% auto;">
+            <img src="images/voyage_au_japon.jpg" class="card-img-top" alt="Voyage au japon">
+            <div class="card-group bg-dark p-3 border border-warning text-white">
+              <h3 class="card-title"> • Agence de voyage au Japon</h3>
+              <p class="card-text fs-3 p-3">- Site d'une agence de voyage qui organise des voyages organisé au japon,
+                créer en HTML et CSS avec trois pages dont une page d'accueil,
+                une page de détails pour chaque ville a visiter pendant le voyage et une page de contact avec l'agence de voyage.</p>
+              <p class="card-text"><small class="text-warning">© Copyright All Rights Reserved</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item  mb-3 ">
+          <div class="card border-warning mb-5 w-75" style="margin: 0% auto;">
+            <img src="images/jeu_de_memoire.jpg" class="card-img-top" alt="Jeu de memoire">
+            <div class="card-group bg-dark p-3 border border-warning text-white">
+              <h3 class="card-title"> • Jeu de Memoire</h3>
+              <p class="card-text fs-3 p-3">- Un jeu de mémoire qui teste la capacité d'un joueur à se souvenir et à
+                retrouver des paires de cartes. Le jeu peut être joué sur un ordinateur, une tablette ou un smartphone via un navigateur web, avec un compteur de cinq minutes.
+                Le jeu commence par afficher un certain nombre de cartes, chacune avec un chiffre dessus. Les cartes sont mélangées et retournées face cachée.
+                Le joueur doit ensuite retourner deux cartes à la fois, en essayant de trouver deux cartes identiques.
+                Si les cartes retournées sont identiques, elles restent face visible en vert.
+                Si les cartes ne sont pas identiques elles s'affichent en rouge et apres une seconde elles sont retournées face cachée
+                et le joueur doit continuer à chercher des paires jusqu'à ce qu'il ait trouvé toutes les cartes correspondantes.</p>
+              <p class="card-text"><small class="text-warning">© Copyright All Rights Reserved</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item  mb-3 ">
+          <div class="card border-warning mb-5 w-75" style="margin: 0% auto;">
+            <img src="images/test_covid.jpg" class="card-img-top" alt="Test covid">
+            <div class="card-group bg-dark p-3 border border-warning  text-white">
+              <h3 class="card-title"> • Test Covid 19</h3>
+              <p class="card-text fs-3 p-3">- Un test cov id créer avec Javascript qui demande d'abord le nombre de jours où nous voulons faire l'analyse.
+                et puis il prend la consommation de chaque journée pour qu'il puisse donner à la fin. le résultat du test pour chaque individu selon son cas et sa situation particulière.</p>
+              <p class="card-text"><small class="text-warning">© Copyright All Rights Reserved</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item  mb-3 ">
+          <div class="card border-warning mb-5 w-75" style="margin: 0% auto;">
+            <img src="images/site_personnel_connexion.jpg" class="card-img-top" alt="Site personnel">
+            <div class="card-group bg-dark p-3 border border-warning  text-white">
+              <h3 class="card-title"> • Site Personnel</h3>
+              <p class="card-text fs-3 p-3">- Un site personnel de compétences et de parcours créé avec HTML, CSS pour présenter mon expérience professionnelle, mon éducation, mes compétences.
+                Il peut être utilisé comme une forme de curriculum vitae en ligne pour aider les employeurs potentiels à en apprendre davantage sur moi et mes compétences.</p>
+              <p class="card-text"><small class="text-warning">© Copyright All Rights Reserved</small></p>
+            </div>
+          </div>
+        </div>
+
 
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
 
-    </section>
+    </div>
+
   </main>
 
 <!-- Remove the container if you want to extend the Footer to full width. -->
@@ -243,8 +349,7 @@
   </footer>
   <!-- Footer -->
 </div>
-<!-- End of .container -->
- 
+<!-- End of .container -->  
 
   <script src="js/bootstrap.min.js"></script>
 </body>
