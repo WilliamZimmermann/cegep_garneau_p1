@@ -5,11 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon portfolio</title>
+  <title>Contact</title>
   <!-- link CSS -->
   <link rel="stylesheet" href="css/style.css">
   <!-- link Boostrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      const uluru = { lat: 46.80811, lng: -71.20579 };
+      // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: uluru,
+      });
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+
+    window.initMap = initMap;
+
+  </script>
 </head>
 
 <body>
@@ -26,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto centered">
             <li class="nav-item mt-2">
-              <a class="nav-link active" aria-current="page" id="nav_style" href="index.html">Accueil</a>
+              <a class="nav-link" id="nav_style" href="index.html">Accueil</a>
             </li>
             <li class="nav-item mt-2">
               <a class="nav-link" id="nav_style" href="about.html">À propos</a>
@@ -35,59 +56,55 @@
               <a class="nav-link" id="nav_style" href="myprojects.html">Mes Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"><button type="button" class="btn btn-primary btn-outline-primary"
-                  id="nav_btn">Contact</button></a>
+              <a class="nav-link active" aria-current="page" href="contact.html"><button type="button"
+                  class="btn btn-primary btn-outline-primary active" id="nav_btn">Contact</button></a>
             </li>
           </ul>
         </div>
     </nav>
   </header>
-  <div class="container bloc-title">
-    <h1 id="titre-accueil">Intégrateur et Développeur Frontend</h1>
-    <h4 class="centered">Je crée et code des choses de manière simple :)</h4>
+  <div class="container mt-3">
+    <h1 id="titre-pages">Contact</h1>
+    <h4>Merci d'avoir pris le temps de me contacter :)</h4>
+    <h5 class="mt-4">J'aimerais avoir de vos nouvelles, comment puis-je vous aider aujourd'hui ?</h5>
   </div>
 
-  <div class="container mt-5 centered">
-    <img src="img/img_web.jpg" class="img-fluid" alt="Image de profil d'Aline" width="800">
+  <div class="container col-md-4 centered img_perfil">
+    <img src="img/avatar_portfolio.png" class="img-fluid rounded-start mt-5" id="img_position"
+      alt="image de profil d'Aline" width="300">
   </div>
 
   <section class=" mycolor">
-    <div class="card mb-5" id="section_1" style="max-width: 650px;">
-      <div class="row g-0">
-        <div class="container col-md-4 centered img_perfil">
-          <img src="img/avatar_portfolio.png" class="img-fluid rounded-start mt-5" alt="Responsive image">
+    <form class="container color_text" action="message.html">
+      <div class="row justify-content-center ">
+
+        <div class="form-group col-md-5 mt-4 ">
+          <label for="inputNom">Nom *</label>
+          <input type="text" class="form-control" id="inputname" placeholder="" required>
         </div>
-        <div class="col-md-8">
-          <div class="card-body bloc_text">
-            <h5 class="card-title mb-4">Bonjour, je suis Aline.</h5>
-            <p class="card-text">Je suis plus heureux lorsque je crée, apprends, explore et réfléchis à la façon
-              d'améliorer les choses. </p>
-            <p class="card-text">Mon dernier emploi était chez Hotels Jaro où j'étais responsable de la maintenance de
-              13 sites et j'ai également travaillé sur la refonte des sites Web Resto Ginger et Centre Carie Factory.
-              L'expérience utilisateur, l'accessibilité et le code propre sont importants pour moi.</p>
-            <a href="myprojects.html" class="btn btn-primary float_right" id="nav_btn">Mes projects</a>
-          </div>
+
+        <div class="form-group col-md-5 mt-4">
+          <label for="inputEmail">Courriel *</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="" required>
         </div>
+
+        <div class="form-group col-md-10 mt-4">
+          <label for="exampleFormControlTextarea1">Message *</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" required></textarea>
+        </div>
+
+        <div class="form-group col-md-10 mt-4">
+          <button type="submit" class="btn btn-primary" id="btn_contact">Envoyer</button>
+        </div>
+
       </div>
-    </div>
+    </form>
   </section>
 
-  <section>
-    <div class="container text-center section_appel mt-5">
-      <div class="row align-items-start">
-        <div class="col-md-5">
-          <h1 id="titre_blanc">Démarrer un projet</h1>
-        </div>
-        <div class="col-md mt-5" id="text_appelcontact">
-          <p>Intéressé à travailler ensemble ? </p>
-          <p>On peut parler. Je paie le café :)</p>
-        </div>
-        <div class="col-md mt-5 " id="btn_appelcontact">
-          <a href="contact.html" class="btn btn-primary btn-outline-primary centered" id="btn_appel">Contact</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="container centered mt-5">
+    <div id="map"></div>
+  </div>
+
 
   <footer class="text-center text-lg-start mycolor mt-5">
     <div class="container d-flex justify-content-center mb-5">
@@ -125,7 +142,10 @@
       Fabriqué à la main par moi © 2023
     </div>
   </footer>
-
+  <!-- To obtain your Google API you can go to this website here https://developers.google.com/maps -> Get Started -> Credentials -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBElxGiNmZ36dHIoLaKtWNyebdpXaMYMMo&callback=initMap&v=weekly"
+    defer></script>
 
   <script src="js/bootstrap.min.js"></script>
 </body>
