@@ -1,0 +1,48 @@
+body{
+    background-image: url("assets/desktop-wallpaper-dark-grey-background-dark.jpeg");
+}
+
+.my-bread-crumb{
+    background-color: black;
+}
+
+.ligne{
+    border: solid 2px white;
+    
+}
+
+
+.lettre{
+    height:20rem;
+    width:fit-content;
+   
+}
+
+
+.card{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    box-shadow: -10px 0px 10px grey;
+}
+
+.card-body{
+background-color: white;
+}
+
+.card-text{
+    text-align: center;
+    color: black;
+}
+
+.moi{
+    margin-left: 125px;
+    margin-bottom: 25px;
+}
+
+.school{
+    margin-left: 80px;
+}
+
+.alcool{
+    height: 200px;
+}
