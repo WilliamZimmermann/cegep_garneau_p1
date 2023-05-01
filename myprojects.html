@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang=fr">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon portfolio</title>
+  <title>Mes projects</title>
   <!-- link CSS -->
   <link rel="stylesheet" href="css/style.css">
   <!-- link Boostrap -->
@@ -26,13 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto centered">
             <li class="nav-item mt-2">
-              <a class="nav-link active" aria-current="page" id="nav_style" href="index.html">Accueil</a>
+              <a class="nav-link" id="nav_style" href="index.html">Accueil</a>
             </li>
             <li class="nav-item mt-2">
               <a class="nav-link" id="nav_style" href="about.html">À propos</a>
             </li>
             <li class="nav-item mt-2">
-              <a class="nav-link" id="nav_style" href="myprojects.html">Mes Projects</a>
+              <a class="nav-link active" aria-current="page" id="nav_style" href="myprojects.html">Mes Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html"><button type="button" class="btn btn-primary btn-outline-primary"
@@ -42,35 +42,53 @@
         </div>
     </nav>
   </header>
-  <div class="container bloc-title">
-    <h1 id="titre-accueil">Intégrateur et Développeur Frontend</h1>
-    <h4 class="centered">Je crée et code des choses de manière simple :)</h4>
+  <div class="container mt-3">
+    <h1 id="titre-pages">Mes Projects</h1>
+    <h4>Une sélection de choses que j'ai construites</h4>
   </div>
 
-  <div class="container mt-5 centered">
-    <img src="img/img_web.jpg" class="img-fluid" alt="Image de profil d'Aline" width="800">
-  </div>
-
-  <section class=" mycolor">
-    <div class="card mb-5" id="section_1" style="max-width: 650px;">
-      <div class="row g-0">
-        <div class="container col-md-4 centered img_perfil">
-          <img src="img/avatar_portfolio.png" class="img-fluid rounded-start mt-5" alt="Responsive image">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body bloc_text">
-            <h5 class="card-title mb-4">Bonjour, je suis Aline.</h5>
-            <p class="card-text">Je suis plus heureux lorsque je crée, apprends, explore et réfléchis à la façon
-              d'améliorer les choses. </p>
-            <p class="card-text">Mon dernier emploi était chez Hotels Jaro où j'étais responsable de la maintenance de
-              13 sites et j'ai également travaillé sur la refonte des sites Web Resto Ginger et Centre Carie Factory.
-              L'expérience utilisateur, l'accessibilité et le code propre sont importants pour moi.</p>
-            <a href="myprojects.html" class="btn btn-primary float_right" id="nav_btn">Mes projects</a>
-          </div>
-        </div>
+  <div class="container mt-5">
+    <div class="row justify-content-between">
+      <div class="col-md-7 centered_mobile">
+        <img src="img/ginger_site.png" class="img-fluid" alt="Image du site Resto Ginger" width="800">
+      </div>
+      <div class="col-md-4 bloc_text">
+        <h4>Ginger Restaurant</h4>
+        <p class="mt-5">J'ai participé à la refonte du site Resto Ginger, j'étais responsable du développement et de la
+          mise en pratique du prototype mobile et desktop que j'ai reçu des designers, j'ai travaillé avec la création
+          de la base de données, le référencement, la sécurité et l'hébergement du site.</p>
       </div>
     </div>
-  </section>
+  </div>
+
+  <div class="container mt-5 carie_mobile">
+    <div class="row justify-content-between">
+      <div class="col-md-7 centered_mobile">
+        <img src="img/carie_site.png" class="img-fluid" alt="Image du site Carie Factory" width="800">
+      </div>
+      <div class="col-md-4 bloc_text">
+        <h4>Centre Carie Factory</h4>
+        <p class="mt-5">J'ai participé à la refonte du site Carie Factory, j'ai été responsable du développement et de
+          la mise en place du prototype mobile, j'ai travaillé au référencement, à la sécurisation du site et à
+          l'hébergement.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 carie_desktop">
+    <div class="row justify-content-between">
+      <div class="col-md-4 bloc_text">
+        <h4>Centre Carie Factory</h4>
+        <p class="mt-5">J'ai participé à la refonte du site Carie Factory, j'ai été responsable du développement et de
+          la mise en place du prototype mobile, j'ai travaillé au référencement, à la sécurisation du site et à
+          l'hébergement.</p>
+      </div>
+      <div class="col-md-7 centered_mobile">
+        <img src="img/carie_site.png" class="img-fluid" alt="Image du site Carie Factory" width="800">
+      </div>
+    </div>
+  </div>
+
 
   <section>
     <div class="container text-center section_appel mt-5">
@@ -125,8 +143,6 @@
       Fabriqué à la main par moi © 2023
     </div>
   </footer>
-
-
   <script src="js/bootstrap.min.js"></script>
 </body>
 
