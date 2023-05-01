@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Ma page d'Accueil</title>
+    <title>Ma page à propos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -14,15 +14,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-            </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.html">A propos</a>
-            </li>
+                <a class="nav-link" href="index.html">Accueil</a>
+            </li> 
             <li class="nav-item">
-              <a class="nav-link" href="projects.html">Mes Projets</a>
-            </li>
+              <a class="nav-link active" aria-current="page" href="about.html">A propos</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html">Mes Projets</a>
+            </li>   
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -30,21 +30,33 @@
         </div>
     </div>
     </nav>
+    <div class="container mt-3">
+        <h1 class="text-center">A propos de moi</h1>
+    </div>
     <div class="container text-center">
-      <div class="row align-items-start">
+      <div class="row">
         <div class="col">
-          <img src="images/image1.avif" class="img-fluid mx-auto d-block" alt="...">
+          <img src="images/image2.jpg" class="img-fluid" alt="...">
         </div>
       </div>
     </div>
-    <div class="container mt-3">
-        <h5 class="text-center fw-bold">Bonjour, mon nom est Asma, je suis
-          développeuse web. Bienvenue sur
-          mon portfolio</h5>
-          <p class="text-center card-text ml-6"><small class="text-body-secondary">Voici quelques-projets dont j'ai travaillé récemment : <br>
-            Portfolio en backend <br>
-            Jeux de mémoire <br>
-            Site de e-Commerce</small></p>
+      <div class="container text-center mt-3">
+        <div class="row">
+          <div class="col">
+            <p>Je m'appelle Asma et je suis passionnée par la création d'éléments en ligne. J'ai découvert le développement web en 2012.  j’aime beaucoup  HTML & CSS, Javascript et Node.js. </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="mt-4">Expérience</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Développeuse web</li>
+        <li class="list-group-item">Analyste</li>
+      </ul>
+      <h2 class="mt-4">Éducation</h2>
+      <ul class="list-group">
+        <li class="list-group-item">AEC Développement web</li>
+      </ul>
     </div>
     <footer class="bg-body-tertiary py-3 fixed-bottom">
       <div class="container">
@@ -55,6 +67,8 @@
         </div>
       </div>
     </footer>
+        
     <script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

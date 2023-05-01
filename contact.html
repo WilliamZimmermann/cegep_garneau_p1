@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Ma page contatc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        #map {
+            height: 350px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: 46.7935879, lng: -71.2627805 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+
+        window.initMap = initMap;
+
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">A propos</a>
+                </li>
+                <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link mx-1 text-white" href="#"><i class="fas fa-align-justify"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Mes Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </li>
+            </ul>
+    
+            </div>
+        </div>
+        </nav>
+        <div class="container mt-3">
+            <h1 class="text-center">Contactez-moi</h1>
+        </div>
+    
+    <div class="container mb-4">
+            <div >
+                <h3 class="text-center mb-3">Adresse</h3>
+                <p class="text-center mb-5">1660 Boulevard de l'entente, Quebec </p>
+                <div class="embed-responsive embed-responsive-16by9 text-center">
+                    <div id="map"></div>
+                </div>
+            </div>
+                    <div class="social-icons-container">
+                        <h5 class="text-center mt-3 fw-bold">Mes Réseaux Sociaux</h5>
+                        <div class="text-center">
+                            <img src="images/git.svg" alt="">
+                            <img src="images/linkedin.svg" alt="">
+                            <img src="images/twitter.svg" alt="">
+                            <img src="images/facebook.svg" alt="">
+                        </div>  
+                     </div> 
+    </div>
+    <footer class="bg-body-tertiary py-3 fixed-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              ©2023 ab.com - Tous droits réservés.
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIucylRG1Do_Oi7qvUgGgTI4PbqPVKkKw&callback=initMap&v=weekly"
+        defer></script>
+</body>
+</html>
