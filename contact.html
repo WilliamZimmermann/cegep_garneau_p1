@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ma Page personnelle - Home</title>
+    <title>Ma Page personnelle - Contact</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        function myMap() {
+            const myLatlng = { lat: 46.7935879, lng: -71.2627805 }
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: myLatlng,
+            })
+            const marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+            })
+        }
+        window.initMap = myMap
+    </script>
 </head>
 
 <body class="d-flex flex-column vh-100">
@@ -15,14 +30,14 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Page Juliana Veiga</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="propos.html">À propos</a>
@@ -31,7 +46,7 @@
                             <a class="nav-link" href="projets.html">Mes projets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -39,32 +54,31 @@
         </nav>
     </header>
     <main>
-        <div class="my-4 d-flex justify-content-center">
-            <img class="max-width-4 max-height-3 w-100 mx-md-2" src="img/persona.jpg" alt="persona">        
-        </div>
-        <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
-            
-            <p>Je m’appelle Juliana Veiga. Je suis étudiant 
-                en développement web au cégep Garneau
-                    à Québec, depuis plus de six mois d’étude.
-            </p> 
-            <p>               
-                Je vous présente, les trois de mes 
-                projets personnels:
-            </p>
+        <div class="container my-4">
+            <form class="row g-3">
+                <div class="col-12">
+                    <label for="nom" class="form-label"> Nom </label>
+                    <input type="text" class="form-control" name="nom" aria-describedby="Nom" placeholder="Tapez votre nom" required>
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email </label>
+                    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Entrez votre courriel" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
                 
-            <ul>
-                <li class="mb-2">Un petit jeu de mémoire développé 
-                    en JavaScript en utilisasant le git;</li>
-                <li class="mb-2">Une création d’un site web personnel 
-                    avec des formulaires avec html
-                    et css;</li>
-                <li class="mb-2">Une création d’un site de voyage</li>
-                <li>Voyage au Japon avec html et css et validation de formulaire.</li>
-            </ul>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary w-lg-25">Envoyer</button>
+                </div>
+            </form>
         </div>
-    </main>   
-    <footer class="p-4 bg-secondary text-dark bg-opacity-25">
+        <div class="my-4 d-flex justify-content-center">
+            <div id="map"></div>
+        </div>
+    </main>
+    <footer class="p-4 mt-auto bg-secondary text-dark bg-opacity-25">
         <div class="container d-flex justify-content-between align-items-center">
             <div>
                 <p class="mb-0">Juliana Veiga</p>
@@ -79,6 +93,7 @@
         </div>
     </footer>
 </body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2y9KO0ogCBH2BC51WM3LYSMU_fojuekk&callback=initMap&v=weekly" defer></script>
 <script src="js/bootstrap.min.js"></script>
 
 </html>

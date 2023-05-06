@@ -1,0 +1,21 @@
+footer img {
+    width: 26px;
+    margin-left: 10px;
+}
+.max-width-4 {
+    max-width: 465px;
+}
+.max-height-3 {
+    max-height: 350px;
+}
+
+#map {
+ height: 350px;
+ width: 550px;
+}
+
+@media (min-width: 992px) {
+    .w-lg-25 {
+        width: 25%;
+    }
+}
