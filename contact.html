@@ -3,97 +3,125 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">A. Poirier Design Web</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Mes projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12">
-          <div style="background-color: #6e5050; color:beige; height: 80px;">
-            <div class="gros-titre">
+      <a class="navbar-brand" href="index.html">A. Poirier Design Web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Mes projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div style="background-color: #6e5050; color:beige; height: 80px;">
+          <div class="gros-titre">
             <h1>Contactez-moi</h1>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-fill my-form">
+    <div class="row g-3">
+      <div class="col">
+        <label for="exampleFormControlTextarea1" class="form-label">Votre nom complet</label>
+        <input type="text" class="form-control" placeholder="Nom, Prénom" aria-label="First name">
+      </div>
+      <div class="col">
+        <label for="exampleFormControlTextarea1" class="form-label">Votre courriel</label>
+        <input type="email" class="form-control" placeholder="adresse@email.com" aria-label="email">
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Votre message</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a href="#" class="btn btn-primary btn-resize text-center">Envoyer</a>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div style="background-color: #6e5050; color:beige; height: 80px;">
+          <div class="gros-titre">
+            <h1>Basée à Québec</h1>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="flex-fill my-form">
-      <div class="row g-3">
-        <div class="col">
-          <label for="exampleFormControlTextarea1" class="form-label">Votre nom complet</label>
-          <input type="text" class="form-control" placeholder="Nom, Prénom" aria-label="First name">
+  <div class="col-10 col-md-4 mb-3 mt-3 mx-auto">
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43695.37180049494!2d-71.25291067647896!3d46.80507930642052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb896124d0259a7%3A0xba00e9060f5ffc16!2sNamaste%20Yoga%20Limoilou!5e0!3m2!1sfr!2sca!4v1670515692215!5m2!1sfr!2sca">
+    </iframe>
+  </div>
+
+  <footer class="footer bg-light mt-4">
+    <div class="container">
+      <div class="row mt-10">
+        <div class="col-4">
+          <h4>LOGO</h4>
         </div>
-        <div class="col">
-          <label for="exampleFormControlTextarea1" class="form-label">Votre courriel</label>
-          <input type="email" class="form-control" placeholder="adresse@email.com" aria-label="email">
+        <div class="col-2">
+          <a href="index.html">Accueil</a>
+        </div>
+        <div class="col-2">
+          <a href="about.html">À propos</a>
+        </div>
+        <div class="col-2">
+          <a href="projects.html">Mes projets</a>
+        </div>
+        <div class="col-2">
+          <a href="contact.html" class="text-sm">Contact</a>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="icon-container d-flex justify-content-center">
+              <a href="https://www.linkedin.com/"><img src="/assets/linkedin.png" class="icons"></a>
+              <a href="https://www.facebook.com/"><img src="/assets/facebook.png" class="icons"></a>
+              <a href="https://www.instagram.com/"><img src="/assets/instagram.png" class="icons"></a>
+              <a href="https://www.twitter.com/"><img src="/assets/twitter.png" class="icons"></a>
+              <a href="mailto:example@example.com"><img src="/assets/envelope.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2023 A.Poirier Design Web. Tous droits réservés.</p>
+          </div>
         </div>
       </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Votre message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-primary btn-resize text-center">Envoyer</a>
-        </div>
-    </div>
-
-    <footer class="footer bg-light mt-4">
-        <div class="container">
-            <div class="row mt-10">
-            <div class="col-4">
-              <h4>LOGO</h4>
-            </div>
-            <div class="col-2">
-              <a href="#">Accueil</a>
-            </div>
-            <div class="col-2">
-              <a href="about.html">À propos</a>
-            </div>
-            <div class="col-2">
-              <a href="#">Mes projets</a>
-          </div>
-          <div class="col-2">
-            <a href="#" class="text-sm">Contact</a>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <p>&copy; 2023 Your Company. All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+  </footer>
 </body>
 <script src="js/bootstrap.min.js"></script>
 
